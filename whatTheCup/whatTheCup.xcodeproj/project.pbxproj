@@ -53,6 +53,9 @@
 			children = (
 				CF8C24A82BC192BB004541B6 /* whatTheCupApp.swift */,
 				CF8C24AA2BC192BB004541B6 /* ContentView.swift */,
+				CF8C24B62BC19ABE004541B6 /* Core */,
+				CF8C24BA2BC19AEA004541B6 /* Extensions */,
+				CF8C24BB2BC19AF2004541B6 /* Resources */,
 				CF8C24AC2BC192BD004541B6 /* Assets.xcassets */,
 				CF8C24AE2BC192BD004541B6 /* Preview Content */,
 			);
@@ -65,6 +68,51 @@
 				CF8C24AF2BC192BD004541B6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF8C24B62BC19ABE004541B6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CF8C24B72BC19AC3004541B6 /* Model */,
+				CF8C24B92BC19AD9004541B6 /* View */,
+				CF8C24B82BC19ACC004541B6 /* ViewModel */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CF8C24B72BC19AC3004541B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF8C24B82BC19ACC004541B6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF8C24B92BC19AD9004541B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF8C24BA2BC19AEA004541B6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CF8C24BB2BC19AF2004541B6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
