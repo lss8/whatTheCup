@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State var soundState = true
+    @StateObject var GameTopVM: GameViewTopModel
+    
+    init() {
+        _GameTopVM = StateObject(wrappedValue: GameViewTopModel())
+    }
     
     var body: some View {
         ZStack {
@@ -18,9 +22,9 @@ struct HomeView: View {
                 HStack {
                     Spacer()
                     Button {
-                        soundState.toggle()
+                        GameTopVM.soundState.toggle()
                     } label: {
-                        if soundState {
+                        if GameTopVM.soundState {
                             Image(systemName: "speaker.wave.3.fill")
                                 .foregroundColor(.black)
                         } else {
