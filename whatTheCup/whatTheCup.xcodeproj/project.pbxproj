@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17DCDD212BC1D8DB0043B12A /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DCDD202BC1D8DB0043B12A /* GameOverView.swift */; };
 		CF8C24A92BC192BB004541B6 /* whatTheCupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24A82BC192BB004541B6 /* whatTheCupApp.swift */; };
 		CF8C24AD2BC192BD004541B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8C24AC2BC192BD004541B6 /* Assets.xcassets */; };
 		CF8C24B02BC192BD004541B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8C24AF2BC192BD004541B6 /* Preview Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17DCDD202BC1D8DB0043B12A /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 		CF8C24A52BC192BB004541B6 /* whatTheCup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatTheCup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8C24A82BC192BB004541B6 /* whatTheCupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatTheCupApp.swift; sourceTree = "<group>"; };
 		CF8C24AC2BC192BD004541B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				CF8C24BC2BC1B044004541B6 /* HomeView.swift */,
 				CF8C24C02BC1B67D004541B6 /* GameViewTop.swift */,
+				17DCDD202BC1D8DB0043B12A /* GameOverView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17DCDD212BC1D8DB0043B12A /* GameOverView.swift in Sources */,
 				CF8C24C12BC1B67D004541B6 /* GameViewTop.swift in Sources */,
 				CF8C24BD2BC1B044004541B6 /* HomeView.swift in Sources */,
 				CF8C24BF2BC1B0F5004541B6 /* Image.swift in Sources */,

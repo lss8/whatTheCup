@@ -16,3 +16,4 @@ struct Icons {
     let logo = Image("logo")
     let startButton = Image("startButton")
 }
+
