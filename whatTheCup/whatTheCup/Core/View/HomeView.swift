@@ -23,6 +23,12 @@ struct HomeView: View {
                     Spacer()
                     Button {
                         GameTopVM.soundState.toggle()
+                        if GameTopVM.soundState {
+                            playSoundtrack(sound: "openMusic")
+                        } else{
+                            stopSoundtrack(sound: "openMusic")
+                        }
+                        
                     } label: {
                         if GameTopVM.soundState {
                             Image(systemName: "speaker.wave.3.fill")
@@ -44,6 +50,15 @@ struct HomeView: View {
                 Spacer()
             }
             .padding(32.0)
+        }
+        .onAppear{
+            playSoundtrack(sound: "openMusic")
+        }
+        .onDisappear{
+            stopSoundtrack(sound: "openMusic")
+            if !GameTopVM.soundState {
+                GameTopVM.soundState.toggle()
+            }
         }
     }
 }
