@@ -11,6 +11,7 @@ import SwiftUI
 extension Image {
     static let icon = Icons()
     static let drinks = Drinks()
+    static let chars = Chars()
 }
 
 struct Icons {
@@ -31,6 +32,12 @@ struct Icons {
     let background3 = Image("BACKGROUND_REAL")
     let dialogueBox = Image("Box")
     let arrow = Image("Seta_Dialogo")
+    let arrowLeft = Image("Arrow_Left")
+    let bgFinalnoCup = Image("BackgroundFinal1")
+    let bgFinal1Cup = Image("BackgroundFinal2")
+    let bgFinal4Cup = Image("BackgroundFinal3")
+    let bgFinalBlur = Image("BackgroundFinalBlur")
+    let bgCup = Image("BackgroundCup")
 }
 
 struct Drinks {
@@ -38,5 +45,18 @@ struct Drinks {
     let bloodyMary = Image("Bloody Mary")
     let coke = Image("Coquinha")
     let gemada = Image("Gemada")
+}
+
+struct Chars {
+    let homer = Image("Homer")
+    let homerHead = Image("HomerHead")
+    let werewolf = Image("Werewolf")
+    let werewolfHead = Image("WerewolfHead")
+    let goblin = Image("Goblin")
+    let goblinHead = Image("GoblinHead")
+    let vampire = Image("")
+    let vampireHead = Image("")
+    let alien = Image("")
+    let alienHead = Image("")
 }
 

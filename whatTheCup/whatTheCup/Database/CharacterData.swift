@@ -13,39 +13,32 @@ struct CharacterData {
         id: 0,
         costume: "Homer",
         drink: "Beer",
-        image: Image.icon.logo,
-        head: Image.icon.startButton)
-    
-    let thor: Character = Character(
-        id: 1,
-        costume: "Thor",
-        drink: "",
-        image: Image.icon.logo,
-        head: Image.icon.startButton)
+        image: Image.chars.homer,
+        head: Image.chars.homerHead)
     
     let vampire: Character = Character(
-        id: 2,
+        id: 1,
         costume: "Vampire",
         drink: "Bloody Mary",
         image: Image.icon.logo,
         head: Image.icon.startButton)
     
     let werewolf: Character = Character(
-        id: 3,
+        id: 2,
         costume: "Werewolf",
         drink: "",
-        image: Image.icon.logo,
-        head: Image.icon.startButton)
+        image: Image.chars.werewolf,
+        head: Image.chars.werewolfHead)
     
     let goblin: Character = Character(
-        id: 4,
+        id: 3,
         costume: "Goblin",
         drink: "Coke",
-        image: Image.icon.logo,
-        head: Image.icon.startButton)
+        image: Image.chars.goblin,
+        head: Image.chars.goblinHead)
     
     let alien: Character = Character(
-        id: 5,
+        id: 4,
         costume: "Alien",
         drink: "",
         image: Image.icon.logo,

@@ -32,7 +32,7 @@ class GameViewTopModel: ObservableObject {
         ("Bloody Mary", Image.drinks.bloodyMary, CharacterData().vampire.costume),
         ("Beer", Image.drinks.beer, CharacterData().homer.costume),
         ("Coke", Image.drinks.coke, CharacterData().goblin.costume),
-        ("Eggnog", Image.drinks.gemada, "Esse é o meu!")
+        ("Eggnog", Image.drinks.gemada, "That's my cup!!")
     ]
     
     @Published var onboardingDialogue: [String] = [
@@ -45,8 +45,6 @@ class GameViewTopModel: ObservableObject {
     func charClicked(name: String) {
         if name == CharacterData().homer.costume {
             homerView = true
-        } else if name == CharacterData().thor.costume {
-            thorView = true
         } else if name == CharacterData().vampire.costume || name == CharacterData().werewolf.costume {
             vampireMageView = true
         } else {

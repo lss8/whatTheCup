@@ -26,7 +26,6 @@
 		CF8C24C72BC1DDFA004541B6 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24C62BC1DDFA004541B6 /* Character.swift */; };
 		CF8C24CA2BC1DEA6004541B6 /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24C92BC1DEA6004541B6 /* CharacterData.swift */; };
 		CF8C24D62BC1FEC6004541B6 /* HomerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24D52BC1FEC6004541B6 /* HomerView.swift */; };
-		CF8C24D82BC1FECF004541B6 /* ThorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24D72BC1FECF004541B6 /* ThorView.swift */; };
 		CF8C24DC2BC1FEE7004541B6 /* VampireWolfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24DB2BC1FEE7004541B6 /* VampireWolfView.swift */; };
 		CF8C24DE2BC1FF0D004541B6 /* EverybodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24DD2BC1FF0D004541B6 /* EverybodyView.swift */; };
 /* End PBXBuildFile section */
@@ -52,7 +51,6 @@
 		CF8C24C62BC1DDFA004541B6 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		CF8C24C92BC1DEA6004541B6 /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
 		CF8C24D52BC1FEC6004541B6 /* HomerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomerView.swift; sourceTree = "<group>"; };
-		CF8C24D72BC1FECF004541B6 /* ThorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThorView.swift; sourceTree = "<group>"; };
 		CF8C24DB2BC1FEE7004541B6 /* VampireWolfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VampireWolfView.swift; sourceTree = "<group>"; };
 		CF8C24DD2BC1FF0D004541B6 /* EverybodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverybodyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,7 +156,6 @@
 				67E086062BC1C282003A4711 /* OnboardingView.swift */,
 				CF8C24C02BC1B67D004541B6 /* GameViewTop.swift */,
 				CF8C24D52BC1FEC6004541B6 /* HomerView.swift */,
-				CF8C24D72BC1FECF004541B6 /* ThorView.swift */,
 				CF8C24DB2BC1FEE7004541B6 /* VampireWolfView.swift */,
 				CF8C24DD2BC1FF0D004541B6 /* EverybodyView.swift */,
 				CF4F21082BC22AEB00A1BCE8 /* BartenderView.swift */,
@@ -267,7 +264,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF4F21092BC22AEB00A1BCE8 /* BartenderView.swift in Sources */,
-				CF8C24D82BC1FECF004541B6 /* ThorView.swift in Sources */,
 				CF4F210E2BC2353900A1BCE8 /* DropDownPicker.swift in Sources */,
 				CF8C24CA2BC1DEA6004541B6 /* CharacterData.swift in Sources */,
 				CF8C24C52BC1D633004541B6 /* GameViewTopModel.swift in Sources */,
