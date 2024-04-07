@@ -16,7 +16,7 @@ struct HomerView: View {
     
     var body: some View {
         ZStack {
-            Image.icon.background
+            Image.icon.bgFinalBlur
                 .ignoresSafeArea()
             VStack {
                 HStack {
@@ -35,7 +35,9 @@ struct HomerView: View {
                 }
                 .padding(.horizontal, 32.0)
                 ZStack {
-                    CharacterData().homer.image
+                    VStack {
+                        CharacterData().homer.image
+                    }
                     VStack {
                         Spacer()
                         HStack {

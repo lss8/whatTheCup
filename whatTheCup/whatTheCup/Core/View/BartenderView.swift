@@ -16,7 +16,7 @@ struct BartenderView: View {
     
     var body: some View {
         ZStack {
-            Image.icon.background
+            Image.icon.bgFinalnoCup
                 .ignoresSafeArea()
             VStack {
                 HStack {
@@ -33,77 +33,70 @@ struct BartenderView: View {
                         }
                     }
                 }
-                ZStack {
-                    Image.icon.logo // BARTENDER
-                    VStack {
-                        Spacer()
-                        Rectangle()
-                            .frame(width: UIScreen.main.bounds.width, height: 376)
-                            .foregroundColor(.gray)
-                    }
-                    VStack(spacing: 32.0) {
-                        Spacer()
-                        NavigationLink(destination: CupView()) {
-                            HStack {
-                                VStack {
-                                    GameTopVM.drinks[0].imagem
-                                        .resizable()
-                                        .frame(width: 72, height: 96)
-                                    Text("1")
-                                        .foregroundStyle(.black)
-                                    Text(GameTopVM.cup1)
-                                        .foregroundStyle(.black)
-                                }
-                                VStack {
-                                    GameTopVM.drinks[1].imagem
-                                        .resizable()
-                                        .frame(width: 72, height: 96)
-                                    Text("2")
-                                        .foregroundStyle(.black)
-                                    Text(GameTopVM.cup2)
-                                        .foregroundStyle(.black)
-                                }
-                                VStack {
-                                    GameTopVM.drinks[2].imagem
-                                        .resizable()
-                                        .frame(width: 72, height: 96)
-                                    Text("3")
-                                        .foregroundStyle(.black)
-                                    Text(GameTopVM.cup3)
-                                        .foregroundStyle(.black)
-                                }
-                                VStack {
-                                    GameTopVM.drinks[3].imagem
-                                        .resizable()
-                                        .frame(width: 72, height: 96)
-                                    Text("4")
-                                        .foregroundStyle(.black)
-                                    Text(GameTopVM.cup4)
-                                        .foregroundStyle(.black)
-                                }
+                VStack(spacing: 32.0) {
+                    Spacer()
+                    Spacer()
+                    NavigationLink(destination: CupView()) {
+                        HStack {
+                            VStack {
+                                GameTopVM.drinks[0].imagem
+                                    .resizable()
+                                    .frame(width: 72, height: 96)
+                                Text("1")
+                                    .foregroundStyle(.black)
+                                Text(GameTopVM.cup1)
+                                    .foregroundStyle(.black)
+                            }
+                            VStack {
+                                GameTopVM.drinks[1].imagem
+                                    .resizable()
+                                    .frame(width: 72, height: 96)
+                                Text("2")
+                                    .foregroundStyle(.black)
+                                Text(GameTopVM.cup2)
+                                    .foregroundStyle(.black)
+                            }
+                            VStack {
+                                GameTopVM.drinks[2].imagem
+                                    .resizable()
+                                    .frame(width: 72, height: 96)
+                                Text("3")
+                                    .foregroundStyle(.black)
+                                Text(GameTopVM.cup3)
+                                    .foregroundStyle(.black)
+                            }
+                            VStack {
+                                GameTopVM.drinks[3].imagem
+                                    .resizable()
+                                    .frame(width: 72, height: 96)
+                                Text("4")
+                                    .foregroundStyle(.black)
+                                Text(GameTopVM.cup4)
+                                    .foregroundStyle(.black)
                             }
                         }
-                        VStack {
-                            HStack {
-                                ZStack {
-                                    Rectangle()
-                                        .frame(width: 80, height: 32)
-                                    Text("Bartender")
-                                        .foregroundStyle(.yellow)
-                                }
-                                Spacer()
-                            }
+                    }
+                    Spacer()
+                    VStack {
+                        HStack {
                             ZStack {
                                 Rectangle()
-                                    .frame(width: 360, height: 160)
-                                Text("Seelct the cup to define who you think it belongs to. For each cup you guess right, you get a point. Only drink a cup if you're sure it's yours.")
+                                    .frame(width: 80, height: 32)
+                                Text("Bartender")
                                     .foregroundStyle(.yellow)
                             }
+                            Spacer()
                         }
-                        .padding(.horizontal, 16.0)
+                        ZStack {
+                            Rectangle()
+                                .frame(width: 360, height: 160)
+                            Text("Seelct the cup to define who you think it belongs to. For each cup you guess right, you get a point. Only drink a cup if you're sure it's yours.")
+                                .foregroundStyle(.yellow)
+                        }
                     }
-                    .padding(.vertical, 32.0)
+                    .padding(.horizontal, 16.0)
                 }
+                .padding(.vertical, 32.0)
             }
         }
     }

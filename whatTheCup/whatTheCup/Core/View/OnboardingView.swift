@@ -20,8 +20,16 @@ struct OnboardingView: View {
     var body: some View {
         
         ZStack{
-            Image.icon.background3
-                .ignoresSafeArea()
+            if dialogueCounter == 0 {
+                Image.icon.bgFinalnoCup
+                    .ignoresSafeArea()
+            } else if dialogueCounter == 1 {
+                Image.icon.bgFinal1Cup
+                    .ignoresSafeArea()
+            } else if dialogueCounter > 1 {
+                Image.icon.bgFinal4Cup
+                    .ignoresSafeArea()
+            }
             
             NavigationLink(destination: GameViewTop(), isActive: $changeView) {EmptyView()}
             
@@ -59,39 +67,35 @@ struct OnboardingView: View {
                                 .foregroundStyle(.purple)
                         }
                     }
-                    
-                    
                     ZStack {
                         Image.icon.dialogueBox
                             .resizable()
                             .frame(width: 357, height: 222)
-                        //era 20
-                        ZStack {
-                            //                                HStack{
-                            Text(GameTopVM.onboardingDialogue[dialogueCounter])
-                                .frame(width: 300, height: 300)
-                                .font(.system(size: 20))
-                                .lineLimit(5)
-                                .foregroundStyle(.green)
-                            //
-                            //                                }
-                            HStack(alignment: .bottom){
-                                Spacer()
-                                Button {
-                                    if dialogueCounter < 5 {
-                                        dialogueCounter += 1
-                                    } else {
-                                        changeView = true
-                                    }
-                                } label: {
-                                    Image.icon.arrow
-                                        .foregroundStyle(.black)
-                                }.offset(x: 30,y: 35)
-                            }
-                            
-                        }.frame(width: 200, height: 100)
-                        
-                        
+                          //era 20
+                            ZStack {
+//                                HStack{
+                                    Text(GameTopVM.onboardingDialogue[dialogueCounter])
+                                    .frame(width: 300, height: 300)
+                                    .font(.system(size: 20))
+                                    .lineLimit(5)
+                                        .foregroundStyle(.green)
+//
+//                                }
+                                HStack(alignment: .bottom){
+                                    Spacer()
+                                    Button {
+                                        if dialogueCounter < 5 {
+                                            dialogueCounter += 1
+                                        } else {
+                                            changeView = true
+                                        }
+                                    } label: {
+                                        Image.icon.arrow
+                                            .foregroundStyle(.black)
+                                    }.offset(x: 30,y: 35)
+                                }
+                                
+                            }.frame(width: 200, height: 100)
                     }
                 }
             }.ignoresSafeArea()
