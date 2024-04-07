@@ -20,8 +20,8 @@ struct CupView: View {
             Image.icon.bgCup
                 .ignoresSafeArea()
             
-            NavigationLink(destination: GameOverView(gameWon: false, score: GameTopVM.score), isActive: $GameTopVM.gameLost) {EmptyView()}
-            NavigationLink(destination: GameOverView(gameWon: true, score: GameTopVM.score), isActive: $GameTopVM.gameWon) {EmptyView()}
+            NavigationLink(destination: GameOverView(gameWon: false, score: GameTopVM.score), isActive: $GameTopVM.gameLost) {EmptyView()}.navigationBarBackButtonHidden(true)
+            NavigationLink(destination: GameOverView(gameWon: true, score: GameTopVM.score), isActive: $GameTopVM.gameWon) {EmptyView()}.navigationBarBackButtonHidden(true)
             
             VStack(spacing: 36.0) {
                 HStack {

@@ -35,9 +35,12 @@ struct VampireWolfView: View {
                 }
                 .padding(.horizontal, 32.0)
                 ZStack {
-                    HStack {
-                        CharacterData().vampire.image
-                        CharacterData().werewolf.image
+                    VStack {
+                        Spacer()
+                        HStack {
+                            CharacterData().vampire.image
+                            CharacterData().werewolf.image
+                        }
                     }
                     VStack{
                         VStack {
@@ -84,7 +87,7 @@ struct VampireWolfView: View {
                     .padding(.trailing, 50.0)
                 }
             }
-            .padding(.vertical, 64.0)
+            .padding(.vertical, 32.0)
         }
     }
 }

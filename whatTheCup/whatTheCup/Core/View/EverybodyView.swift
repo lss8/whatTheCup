@@ -39,44 +39,50 @@ struct EverybodyView: View {
                         CharacterData().alien.image
                         CharacterData().goblin.image
                     }
-                    VStack {
-                        Spacer()
-                        HStack {
-                            ZStack {
-                                Rectangle()
-                                    .frame(width: 72, height: 32)
-                                Text(CharacterData().alien.costume)
-                                    .font(.custom(.pixellari, size: 20.0))
-                                    .foregroundStyle(.yellow)
-                            }
+                    VStack{
+                        
+                        VStack {
                             Spacer()
-                        }
-                        ZStack {
-                            Rectangle()
-                                .frame(width: 360, height: 56)
-                            Text("This party is ok, I guess. The music is too loud, though.")
-                                .font(.custom(.pixellari, size: 20.0))
-                                .foregroundStyle(.yellow)
-                        }
-                        HStack {
-                            Spacer()
-                            ZStack {
-                                Rectangle()
-                                    .frame(width: 72, height: 32)
-                                Text(CharacterData().goblin.costume)
-                                    .foregroundStyle(.yellow)
-                                    .font(.custom(.pixellari, size: 20.0))
+                            VStack(alignment: .leading, spacing: -5) {
+                                HStack {
+                                    ZStack {
+                                        Rectangle()
+                                            .frame(width: 80, height: 32)
+                                        Text(CharacterData().alien.costume)
+                                            .font(.custom(.pixellari, size: 20.0))
+                                            .foregroundStyle(.blue)
+                                    }
+                                }
+                                ZStack {
+                                    Rectangle()
+                                        .frame(width: 300, height: 56)
+                                    Text("I think I'm going to throw up… ")
+                                        .font(.custom(.pixellari, size: 20.0))
+                                        .foregroundStyle(.green)
+                                }
                             }
-                        }
-                        ZStack {
-                            Rectangle()
-                                .frame(width: 360, height: 56)
-                            Text("Relax, man! You should be more like that Simpson dude. He's super into this party - his costume is sick!")
-                                .font(.custom(.pixellari, size: 20.0))
-                                .foregroundStyle(.yellow)
+                            
+                            VStack(alignment: .leading, spacing: 0) {
+                                HStack {
+                                    ZStack {
+                                        Rectangle()
+                                            .frame(width: 90, height: 32)
+                                        Text(CharacterData().goblin.costume)
+                                            .font(.custom(.pixellari, size: 20.0))
+                                            .foregroundStyle(.orange)
+                                    }
+                                }
+                                ZStack {
+                                    Rectangle()
+                                        .frame(width: 300, height: 56)
+                                    Text("Let's go take some more shots!!")
+                                        .font(.custom(.pixellari, size: 20.0))
+                                        .foregroundStyle(.green)
+                                }
+                            }
                         }
                     }
-                    .padding(.horizontal, 16.0)
+                    .padding(.trailing, 50.0)
                 }
             }
             .padding(.vertical, 64.0)
