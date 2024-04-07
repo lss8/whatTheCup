@@ -16,6 +16,8 @@ struct GameViewTop: View {
     
     var body: some View {
         ZStack {
+            Image.icon.background
+                .ignoresSafeArea()
             
             NavigationLink(destination: HomerView(), isActive: $GameTopVM.homerView) {EmptyView()}
             NavigationLink(destination: ThorView(), isActive: $GameTopVM.thorView) {EmptyView()}
@@ -38,9 +40,11 @@ struct GameViewTop: View {
                         }
                     }
                 }
-                Image.icon.logo // IMAGEM DO BARTENDER
-                    .resizable()
-                    .frame(width: 150, height: 150)
+                NavigationLink(destination: BartenderView()) {
+                    Image.icon.logo // IMAGEM DO BARTENDER
+                        .resizable()
+                        .frame(width: 150, height: 150)
+                }
                 ZStack {
                     Rectangle()
                         .frame(width: UIScreen.main.bounds.width, height: 100)
@@ -57,9 +61,8 @@ struct GameViewTop: View {
                     }
                 }
                 ZStack {
-                    Rectangle()
+                    Image.icon.background2
                         .ignoresSafeArea()
-                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                     VStack {
                         HStack {
                             Button {

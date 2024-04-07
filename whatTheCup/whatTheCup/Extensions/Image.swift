@@ -15,5 +15,7 @@ extension Image {
 struct Icons {
     let logo = Image("logo")
     let startButton = Image("startButton")
+    let background = Image("Background")
+    let background2 = Image("Background2")
 }
 
