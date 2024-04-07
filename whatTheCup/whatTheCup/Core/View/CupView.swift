@@ -40,7 +40,7 @@ struct CupView: View {
                 }
                 VStack {
                     HStack {
-                        Text("Suspeitos")
+                        Text("Suspects")
                             .foregroundStyle(.gray)
                         Spacer()
                     }
@@ -111,9 +111,9 @@ struct CupView: View {
                     }
                 }
                 VStack {
-                    Text("Se acha que esse é o seu copo...")
+                    Text("If you think this is your cup...")
                     Button {
-                        GameTopVM.guessCup(num: cupCounter, name: "Esse é o meu!")
+                        GameTopVM.guessCup(num: cupCounter, name: "That's my cup!!")
                     } label: {
                         Image("DrinkButton")
                     }

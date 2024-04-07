@@ -25,7 +25,7 @@ struct OnboardingView: View {
             
             NavigationLink(destination: GameViewTop(), isActive: $changeView) {EmptyView()}
             
-            VStack(spacing: 550){
+            VStack(spacing: 420){
                 HStack{
                     Spacer()
                     Button {
@@ -40,9 +40,9 @@ struct OnboardingView: View {
                         }
                     }
                     
-                    
+                
                 }.padding(.trailing)
-                VStack(spacing: 0) {
+                VStack(alignment: .leading, spacing: 0) {
                     HStack(spacing: 0.0) {
                         ZStack {
                             Image.icon.dialogueBox
@@ -52,34 +52,47 @@ struct OnboardingView: View {
                                 .foregroundStyle(.purple)
                         }
                     }
-                    .padding(.leading, -178.5)
+                    
+
                     ZStack {
                         Image.icon.dialogueBox
                             .resizable()
                             .frame(width: 357, height: 222)
-                        VStack(spacing: 20){
-                            Text(GameTopVM.onboardingDialogue[dialogueCounter])
-                                .foregroundStyle(.green)
-                            HStack{
-                                Spacer()
-                                Button {
-                                    if dialogueCounter < 3 {
-                                        dialogueCounter += 1
-                                    } else {
-                                        changeView = true
-                                    }
-                                } label: {
-                                    Image.icon.arrow
-                                        .foregroundStyle(.black)
+                          //era 20
+                            ZStack {
+//                                HStack{
+                                    Text(GameTopVM.onboardingDialogue[dialogueCounter])
+                                    .frame(width: 300, height: 300)
+                                    .font(.system(size: 20))
+                                    .lineLimit(5)
+                                        .foregroundStyle(.green)
+//
+//                                }
+                                HStack(alignment: .bottom){
+                                    Spacer()
+                                    Button {
+                                        if dialogueCounter < 5 {
+                                            dialogueCounter += 1
+                                        } else {
+                                            changeView = true
+                                        }
+                                    } label: {
+                                        Image.icon.arrow
+                                            .foregroundStyle(.black)
+                                    }.offset(x: 30,y: 35)
                                 }
-                            }
-                        }.frame(width: 200, height: 100)
+                                
+                            }.frame(width: 200, height: 100)
+                            
+                        
                     }
                 }
             }.ignoresSafeArea()
         }.ignoresSafeArea()
     }
 }
+
+
 
 #Preview {
     OnboardingView()
