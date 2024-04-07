@@ -20,8 +20,16 @@ struct OnboardingView: View {
     var body: some View {
         
         ZStack{
-            Image.icon.background3
-                .ignoresSafeArea()
+            if dialogueCounter == 0 {
+                Image.icon.bgFinalnoCup
+                    .ignoresSafeArea()
+            } else if dialogueCounter == 1 {
+                Image.icon.bgFinal1Cup
+                    .ignoresSafeArea()
+            } else if dialogueCounter > 1 {
+                Image.icon.bgFinal4Cup
+                    .ignoresSafeArea()
+            }
             
             NavigationLink(destination: GameViewTop(), isActive: $changeView) {EmptyView()}
             
@@ -33,10 +41,10 @@ struct OnboardingView: View {
                     } label: {
                         if soundState {
                             Image(systemName: "speaker.wave.3.fill")
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                         } else {
                             Image(systemName: "speaker.slash.fill")
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                         }
                     }
                     
@@ -52,8 +60,6 @@ struct OnboardingView: View {
                                 .foregroundStyle(.purple)
                         }
                     }
-                    
-
                     ZStack {
                         Image.icon.dialogueBox
                             .resizable()
@@ -83,8 +89,6 @@ struct OnboardingView: View {
                                 }
                                 
                             }.frame(width: 200, height: 100)
-                            
-                        
                     }
                 }
             }.ignoresSafeArea()
