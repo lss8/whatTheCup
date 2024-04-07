@@ -36,14 +36,15 @@ struct OnboardingView: View {
             VStack(spacing: 420){
                 HStack {
                     Spacer()
-                    Button {
+                    Button(action: {
+//                        print("teste")
                         GameTopVM.soundState.toggle()
-//                        if GameTopVM.soundState {
-//                            playSoundtrack(sound: "clubSound")
-//                        } else {
-//                            stopSoundtrack(sound: "clubSound")
-//                        }
-                    } label: {
+                        if GameTopVM.soundState{
+                            playSoundtrack(sound: "clubSound")
+                        } else {
+                            stopSoundtrack(sound: "clubSound")
+                        }
+                    }, label: {
                         if GameTopVM.soundState{
                             Image(systemName: "speaker.wave.3.fill")
                                 .foregroundColor(.white)
@@ -51,11 +52,14 @@ struct OnboardingView: View {
                             Image(systemName: "speaker.slash.fill")
                                 .foregroundColor(.white)
                         }
-                    }
+                    })
                     .padding(.trailing, 20)
-                    .padding(.top, 40)
+                    .padding(.top, 50)
                     .padding(.bottom, 80)
                 }
+//                .onAppear{
+//                    playSoundtrack(sound: "clubSound")
+//                }
                 
                 VStack(alignment: .leading, spacing: 0) {
                     HStack(spacing: 0.0) {
@@ -99,10 +103,6 @@ struct OnboardingView: View {
             }.ignoresSafeArea()
         }
         .ignoresSafeArea()
-        .onAppear{
-            //            playSoundtrack(sound: "clubSound")
-        }
-        
     }
 }
 

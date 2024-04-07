@@ -54,7 +54,9 @@ struct GameOverView: View {
                     }
                 }
                 
-                Image(gameWon ? "bunny" : "loser")
+                Image(gameWon ? "bunny" : "loseBunny")
+                    .resizable()
+                    .scaledToFit()
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/,
                        label: {
                     ZStack{
