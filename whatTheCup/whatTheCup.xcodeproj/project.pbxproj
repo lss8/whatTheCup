@@ -22,6 +22,11 @@
 		CF8C24C52BC1D633004541B6 /* GameViewTopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24C42BC1D633004541B6 /* GameViewTopModel.swift */; };
 		CF8C24C72BC1DDFA004541B6 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24C62BC1DDFA004541B6 /* Character.swift */; };
 		CF8C24CA2BC1DEA6004541B6 /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24C92BC1DEA6004541B6 /* CharacterData.swift */; };
+		CF8C24D62BC1FEC6004541B6 /* HomerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24D52BC1FEC6004541B6 /* HomerView.swift */; };
+		CF8C24D82BC1FECF004541B6 /* ThorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24D72BC1FECF004541B6 /* ThorView.swift */; };
+		CF8C24DA2BC1FEDA004541B6 /* TinkerMageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24D92BC1FEDA004541B6 /* TinkerMageView.swift */; };
+		CF8C24DC2BC1FEE7004541B6 /* VampireWolfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24DB2BC1FEE7004541B6 /* VampireWolfView.swift */; };
+		CF8C24DE2BC1FF0D004541B6 /* EverybodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24DD2BC1FF0D004541B6 /* EverybodyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +46,11 @@
 		CF8C24C42BC1D633004541B6 /* GameViewTopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewTopModel.swift; sourceTree = "<group>"; };
 		CF8C24C62BC1DDFA004541B6 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		CF8C24C92BC1DEA6004541B6 /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
+		CF8C24D52BC1FEC6004541B6 /* HomerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomerView.swift; sourceTree = "<group>"; };
+		CF8C24D72BC1FECF004541B6 /* ThorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThorView.swift; sourceTree = "<group>"; };
+		CF8C24D92BC1FEDA004541B6 /* TinkerMageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkerMageView.swift; sourceTree = "<group>"; };
+		CF8C24DB2BC1FEE7004541B6 /* VampireWolfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VampireWolfView.swift; sourceTree = "<group>"; };
+		CF8C24DD2BC1FF0D004541B6 /* EverybodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverybodyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +144,13 @@
 			children = (
 				CF8C24BC2BC1B044004541B6 /* HomeView.swift */,
 				CF8C24C02BC1B67D004541B6 /* GameViewTop.swift */,
-				17DCDD202BC1D8DB0043B12A /* GameOverView.swift */,
 				67E086062BC1C282003A4711 /* OnboardingView.swift */,
+				CF8C24D52BC1FEC6004541B6 /* HomerView.swift */,
+				CF8C24D72BC1FECF004541B6 /* ThorView.swift */,
+				CF8C24D92BC1FEDA004541B6 /* TinkerMageView.swift */,
+				CF8C24DB2BC1FEE7004541B6 /* VampireWolfView.swift */,
+				CF8C24DD2BC1FF0D004541B6 /* EverybodyView.swift */,
+				17DCDD202BC1D8DB0043B12A /* GameOverView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -237,15 +252,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF8C24D82BC1FECF004541B6 /* ThorView.swift in Sources */,
 				CF8C24CA2BC1DEA6004541B6 /* CharacterData.swift in Sources */,
 				CF8C24C52BC1D633004541B6 /* GameViewTopModel.swift in Sources */,
+				CF8C24D62BC1FEC6004541B6 /* HomerView.swift in Sources */,
+				CF8C24DC2BC1FEE7004541B6 /* VampireWolfView.swift in Sources */,
 				17DCDD212BC1D8DB0043B12A /* GameOverView.swift in Sources */,
 				CF8C24C12BC1B67D004541B6 /* GameViewTop.swift in Sources */,
 				CF8C24BD2BC1B044004541B6 /* HomeView.swift in Sources */,
+				CF8C24DE2BC1FF0D004541B6 /* EverybodyView.swift in Sources */,
 				17DCDD262BC1FC6E0043B12A /* sound.swift in Sources */,
 				CF8C24C72BC1DDFA004541B6 /* Character.swift in Sources */,
 				CF8C24BF2BC1B0F5004541B6 /* Image.swift in Sources */,
 				67E086072BC1C282003A4711 /* OnboardingView.swift in Sources */,
+				CF8C24DA2BC1FEDA004541B6 /* TinkerMageView.swift in Sources */,
 				CF8C24A92BC192BB004541B6 /* whatTheCupApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
