@@ -47,23 +47,39 @@ struct BartenderView: View {
                             HStack {
                                 VStack {
                                     GameTopVM.drinks[0].imagem
+                                        .resizable()
+                                        .frame(width: 72, height: 96)
                                     Text("1")
+                                        .foregroundStyle(.black)
                                     Text(GameTopVM.cup1)
+                                        .foregroundStyle(.black)
                                 }
                                 VStack {
-                                    GameTopVM.drinks[0].imagem
+                                    GameTopVM.drinks[1].imagem
+                                        .resizable()
+                                        .frame(width: 72, height: 96)
                                     Text("2")
+                                        .foregroundStyle(.black)
                                     Text(GameTopVM.cup2)
+                                        .foregroundStyle(.black)
                                 }
                                 VStack {
-                                    GameTopVM.drinks[0].imagem
+                                    GameTopVM.drinks[2].imagem
+                                        .resizable()
+                                        .frame(width: 72, height: 96)
                                     Text("3")
+                                        .foregroundStyle(.black)
                                     Text(GameTopVM.cup3)
+                                        .foregroundStyle(.black)
                                 }
                                 VStack {
-                                    GameTopVM.drinks[0].imagem
+                                    GameTopVM.drinks[3].imagem
+                                        .resizable()
+                                        .frame(width: 72, height: 96)
                                     Text("4")
+                                        .foregroundStyle(.black)
                                     Text(GameTopVM.cup4)
+                                        .foregroundStyle(.black)
                                 }
                             }
                         }

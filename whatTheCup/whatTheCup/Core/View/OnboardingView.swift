@@ -8,18 +8,26 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    @StateObject var GameTopVM: GameViewTopModel
     @State var soundState = true
+    @State var dialogueCounter = 0
+    @State var changeView = false
+    
+    init() {
+        _GameTopVM = StateObject(wrappedValue: GameViewTopModel())
+    }
+    
     var body: some View {
         
         ZStack{
-            Color(.gray)
+            Image.icon.background3
+                .ignoresSafeArea()
+            
+            NavigationLink(destination: GameViewTop(), isActive: $changeView) {EmptyView()}
             
             VStack(spacing: 550){
-                //                Spacer()
                 HStack{
-                    
                     Spacer()
-                    
                     Button {
                         soundState.toggle()
                     } label: {
@@ -34,90 +42,42 @@ struct OnboardingView: View {
                     
                     
                 }.padding(.trailing)
-                
-                //                Spacer()
-                
                 VStack(spacing: 0) {
                     HStack(spacing: 0.0) {
                         ZStack {
-                            Rectangle()
-                                .frame(width: 30, height: 30)
-                                .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                            Text("Eu")
-                            
+                            Image.icon.dialogueBox
+                                .resizable()
+                                .frame(width: 120, height: 35)
+                            Text("Bartender")
+                                .foregroundStyle(.purple)
                         }
                     }
-                    .padding(.leading, -150.0)
-                    
-                
+                    .padding(.leading, -178.5)
                     ZStack {
-                        Rectangle()
-                            .frame(width: 300, height: 100)
-                            .foregroundColor(.blue) //texto
+                        Image.icon.dialogueBox
+                            .resizable()
+                            .frame(width: 357, height: 222)
                         VStack(spacing: 20){
-                            Text("Lorem ipsum dolor etc")
+                            Text(GameTopVM.onboardingDialogue[dialogueCounter])
+                                .foregroundStyle(.green)
                             HStack{
-                                
-                                Button {
-                                    //passar diálogo -> View Model
-                                } label: {
-                                    Image(systemName: "arrow.left")
-//                                        .padding(.trailing, 170.0)
-
-                                        .foregroundStyle(.black)
-                                }
                                 Spacer()
                                 Button {
-                                    //passar diálogo -> View Model
+                                    if dialogueCounter < 3 {
+                                        dialogueCounter += 1
+                                    } else {
+                                        changeView = true
+                                    }
                                 } label: {
-                                    Image(systemName: "arrow.right")
-//                                        .padding(.trailing, 90.0)
-
+                                    Image.icon.arrow
                                         .foregroundStyle(.black)
                                 }
                             }
                         }.frame(width: 200, height: 100)
                     }
                 }
-                //                Spacer()
-                
-                
-                
             }.ignoresSafeArea()
         }.ignoresSafeArea()
-        //        VStack {
-        //
-        //
-        //            Spacer()
-        //            ZStack {
-        //                VStack(spacing: 0.0) {
-        //                    Image(systemName: "globe")  //princesa
-        //                }
-        //                VStack {
-        //                    Rectangle()
-        //                        .frame(width: 80, height: 80)
-        //                }
-        //                .padding(.top, 200.0)
-        //
-        //                VStack {
-        //                    Image(systemName: "pencil.tip") //copo
-        //                    VStack{
-        //                        HStack {
-        //                            ZStack {
-        //                                Rectangle() //"eu"
-        //                                    .frame(width: 30, height: 30)
-        //                                    .foregroundColor(.red)
-        //                                Text("Eu")
-        //                            }
-        //                            Spacer()
-        //                        }
-        //
-        //
-        //                    }
-        //                }
-        //
-        //            }
-        //            Spacer()
     }
 }
 
