@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct GameOverView: View {
+    let gameWon: Bool
+    let score: Int
+    
     var body: some View {
         ZStack{
             Color(.gray)
@@ -15,18 +18,36 @@ struct GameOverView: View {
             VStack(spacing: 40.0){
                 VStack(spacing: 16){
                     VStack {
-                        Text("YOU WIN!")
+                        Text(gameWon ? "YOU WIN!!" : "YOU LOST!!")
                             .font(.largeTitle)
                             .fontWeight(.regular)
                     }
-                    HStack{
-                        Image(systemName: "star.fill")
-                        Image(systemName: "star.fill")
-                        Image(systemName: "star.fill")
+                    if gameWon && (score > 1) {
+                        HStack{
+                            if score == 2 {
+                                Image(systemName: "star.fill")
+                                    .foregroundColor(.yellow)
+                                Image(systemName: "star")
+                                Image(systemName: "star")
+                            } else if score == 3 {
+                                Image(systemName: "star.fill")
+                                    .foregroundColor(.yellow)
+                                Image(systemName: "star.fill")
+                                    .foregroundColor(.yellow)
+                                Image(systemName: "star")
+                            } else if score == 4 {
+                                Image(systemName: "star.fill")
+                                    .foregroundColor(.yellow)
+                                Image(systemName: "star.fill")
+                                    .foregroundColor(.yellow)
+                                Image(systemName: "star.fill")
+                                    .foregroundColor(.yellow)
+                            }
+                        }
                     }
                 }
                 
-                Image("wonner")
+                Image(gameWon ? "wonner" : "loser")
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/,
                        label: {
                     ZStack{
@@ -43,5 +64,5 @@ struct GameOverView: View {
 }
 
 #Preview {
-    GameOverView()
+    GameOverView(gameWon: true, score: 4)
 }

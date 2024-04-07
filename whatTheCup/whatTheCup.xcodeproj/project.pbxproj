@@ -27,7 +27,6 @@
 		CF8C24CA2BC1DEA6004541B6 /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24C92BC1DEA6004541B6 /* CharacterData.swift */; };
 		CF8C24D62BC1FEC6004541B6 /* HomerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24D52BC1FEC6004541B6 /* HomerView.swift */; };
 		CF8C24D82BC1FECF004541B6 /* ThorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24D72BC1FECF004541B6 /* ThorView.swift */; };
-		CF8C24DA2BC1FEDA004541B6 /* TinkerMageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24D92BC1FEDA004541B6 /* TinkerMageView.swift */; };
 		CF8C24DC2BC1FEE7004541B6 /* VampireWolfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24DB2BC1FEE7004541B6 /* VampireWolfView.swift */; };
 		CF8C24DE2BC1FF0D004541B6 /* EverybodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24DD2BC1FF0D004541B6 /* EverybodyView.swift */; };
 /* End PBXBuildFile section */
@@ -54,7 +53,6 @@
 		CF8C24C92BC1DEA6004541B6 /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
 		CF8C24D52BC1FEC6004541B6 /* HomerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomerView.swift; sourceTree = "<group>"; };
 		CF8C24D72BC1FECF004541B6 /* ThorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThorView.swift; sourceTree = "<group>"; };
-		CF8C24D92BC1FEDA004541B6 /* TinkerMageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkerMageView.swift; sourceTree = "<group>"; };
 		CF8C24DB2BC1FEE7004541B6 /* VampireWolfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VampireWolfView.swift; sourceTree = "<group>"; };
 		CF8C24DD2BC1FF0D004541B6 /* EverybodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverybodyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,12 +159,11 @@
 				CF8C24C02BC1B67D004541B6 /* GameViewTop.swift */,
 				CF8C24D52BC1FEC6004541B6 /* HomerView.swift */,
 				CF8C24D72BC1FECF004541B6 /* ThorView.swift */,
-				CF8C24D92BC1FEDA004541B6 /* TinkerMageView.swift */,
 				CF8C24DB2BC1FEE7004541B6 /* VampireWolfView.swift */,
 				CF8C24DD2BC1FF0D004541B6 /* EverybodyView.swift */,
-				17DCDD202BC1D8DB0043B12A /* GameOverView.swift */,
 				CF4F21082BC22AEB00A1BCE8 /* BartenderView.swift */,
 				CF4F210A2BC233DF00A1BCE8 /* CupView.swift */,
+				17DCDD202BC1D8DB0043B12A /* GameOverView.swift */,
 				CF4F210C2BC2352600A1BCE8 /* Components */,
 			);
 			path = View;
@@ -285,7 +282,6 @@
 				CF8C24BF2BC1B0F5004541B6 /* Image.swift in Sources */,
 				CF4F210B2BC233DF00A1BCE8 /* CupView.swift in Sources */,
 				67E086072BC1C282003A4711 /* OnboardingView.swift in Sources */,
-				CF8C24DA2BC1FEDA004541B6 /* TinkerMageView.swift in Sources */,
 				CF8C24A92BC192BB004541B6 /* whatTheCupApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

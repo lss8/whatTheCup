@@ -43,27 +43,27 @@ struct BartenderView: View {
                     }
                     VStack(spacing: 32.0) {
                         Spacer()
-                        NavigationLink(destination: BartenderView()) {
+                        NavigationLink(destination: CupView()) {
                             HStack {
                                 VStack {
-                                    Image("Cup")
+                                    GameTopVM.drinks[0].imagem
                                     Text("1")
                                     Text(GameTopVM.cup1)
                                 }
                                 VStack {
-                                    Image("Cup")
-                                    Text("1")
-                                    Text(GameTopVM.cup1)
+                                    GameTopVM.drinks[0].imagem
+                                    Text("2")
+                                    Text(GameTopVM.cup2)
                                 }
                                 VStack {
-                                    Image("Cup")
-                                    Text("1")
-                                    Text(GameTopVM.cup1)
+                                    GameTopVM.drinks[0].imagem
+                                    Text("3")
+                                    Text(GameTopVM.cup3)
                                 }
                                 VStack {
-                                    Image("Cup")
-                                    Text("1")
-                                    Text(GameTopVM.cup1)
+                                    GameTopVM.drinks[0].imagem
+                                    Text("4")
+                                    Text(GameTopVM.cup4)
                                 }
                             }
                         }
