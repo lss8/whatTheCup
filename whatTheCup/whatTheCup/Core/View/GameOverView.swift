@@ -61,10 +61,14 @@ struct GameOverView: View {
                        label: {
                     ZStack{
                         if gameWon{
-                            Image.icon.playAgain
+                            NavigationLink(destination: HomeView()) {
+                                Image.icon.playAgain
+                            }
                         }
                         else{
-                            Image.icon.startOver
+                            NavigationLink(destination: HomeView()) {
+                                Image.icon.startOver
+                            } 
                         }
                     }
                 })
