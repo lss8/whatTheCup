@@ -38,7 +38,7 @@ struct HomerView: View {
                     VStack {
                         CharacterData().homer.image
                     }
-                    .padding(.bottom, 150.0)    //posicao homer
+                    .padding(.bottom, 40.0)    //posicao homer
                     VStack(alignment: .leading, spacing: -10){
                         Spacer()
                         HStack {
@@ -53,16 +53,14 @@ struct HomerView: View {
                         }
                             ZStack {
                             Rectangle()
-                                .frame(width: 350, height: 100)
+                                .frame(width: 350, height: 200)
                             Text("They keep complimenting my bald head thinking its part of the costume… I'm just calvo.")
                                 .foregroundStyle(.green)
                         }
                     }
-                    .padding(.vertical, 40.0)
                 }
                 .padding(30.0)
             }
-            .padding(.vertical, 30.0)
         }
     }
 }
