@@ -10,7 +10,7 @@ import SwiftUI
 struct GameOverView: View {
     var body: some View {
         ZStack{
-            Color(.gray)
+            Image.icon.startBg
                 .ignoresSafeArea()
             VStack(spacing: 40.0){
                 VStack(spacing: 16){
@@ -18,6 +18,7 @@ struct GameOverView: View {
                         Text("YOU WIN!")
                             .font(.largeTitle)
                             .fontWeight(.regular)
+                            .foregroundColor(.white)
                     }
                     HStack{
                         Image(systemName: "star.fill")
