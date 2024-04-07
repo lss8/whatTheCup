@@ -36,8 +36,8 @@ struct EverybodyView: View {
                 .padding(.horizontal, 32.0)
                 ZStack {
                     HStack {
-                        CharacterData().goblin.image
                         CharacterData().alien.image
+                        CharacterData().goblin.image
                     }
                     VStack {
                         Spacer()
@@ -45,7 +45,8 @@ struct EverybodyView: View {
                             ZStack {
                                 Rectangle()
                                     .frame(width: 72, height: 32)
-                                Text(CharacterData().goblin.costume)
+                                Text(CharacterData().alien.costume)
+                                    .font(.custom(.pixellari, size: 20.0))
                                     .foregroundStyle(.yellow)
                             }
                             Spacer()
@@ -53,7 +54,8 @@ struct EverybodyView: View {
                         ZStack {
                             Rectangle()
                                 .frame(width: 360, height: 56)
-                            Text("It's a decent party, I guess. The music is too loud, though.")
+                            Text("This party is ok, I guess. The music is too loud, though.")
+                                .font(.custom(.pixellari, size: 20.0))
                                 .foregroundStyle(.yellow)
                         }
                         HStack {
@@ -61,14 +63,16 @@ struct EverybodyView: View {
                             ZStack {
                                 Rectangle()
                                     .frame(width: 72, height: 32)
-                                Text(CharacterData().alien.costume)
+                                Text(CharacterData().goblin.costume)
                                     .foregroundStyle(.yellow)
+                                    .font(.custom(.pixellari, size: 20.0))
                             }
                         }
                         ZStack {
                             Rectangle()
                                 .frame(width: 360, height: 56)
-                            Text("Geez, you're so grumpy! Your costume suits you well!")
+                            Text("Relax, man! You should be more like that Simpson dude. He's super into this party - his costume is sick!")
+                                .font(.custom(.pixellari, size: 20.0))
                                 .foregroundStyle(.yellow)
                         }
                     }
