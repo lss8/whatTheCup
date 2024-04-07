@@ -64,6 +64,7 @@ struct OnboardingView: View {
                                 .resizable()
                                 .frame(width: 120, height: 35)
                             Text("Bartender")
+                                .font(.custom(.pixellari, size: 20.0))
                                 .foregroundStyle(.purple)
                         }
                     }
@@ -74,7 +75,7 @@ struct OnboardingView: View {
                             ZStack {
                                     Text(GameTopVM.onboardingDialogue[dialogueCounter])
                                     .frame(width: 300, height: 300)
-                                    .font(.system(size: 20))
+                                    .font(.custom(.pixellari, size: 20.0))
                                     .lineLimit(5)
                                     .foregroundStyle(.green)
 

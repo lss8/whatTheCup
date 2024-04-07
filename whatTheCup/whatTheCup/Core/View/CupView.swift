@@ -89,22 +89,25 @@ struct CupView: View {
                                 cupCounter = cupCounter - 1
                             }
                         } label: {
-                            Image(systemName: "arrow.left")
+                            Image.icon.arrowLeft
                                 .foregroundColor(.purple)
                         }
                         Text(String(cupCounter+1))
+                            .font(.custom(.pixellari, size: 20.0))
                         Button {
                             if cupCounter < 3 {
                                 cupCounter = cupCounter + 1
                             }
                         } label: {
-                            Image(systemName: "arrow.right")
+                            Image.icon.arrowRight
                                 .foregroundColor(.purple)
                         }
                     }
                 }
                 VStack {
                     Text("If you think this is your cup...")
+                        .font(.custom(.pixellari, size: 20.0))
+                        .foregroundStyle(.yellow)
                     Button {
                         GameTopVM.guessCup(num: cupCounter, name: "That's my cup!!")
                     } label: {

@@ -30,6 +30,8 @@
 		CF8C24D62BC1FEC6004541B6 /* HomerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24D52BC1FEC6004541B6 /* HomerView.swift */; };
 		CF8C24DC2BC1FEE7004541B6 /* VampireWolfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24DB2BC1FEE7004541B6 /* VampireWolfView.swift */; };
 		CF8C24DE2BC1FF0D004541B6 /* EverybodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24DD2BC1FF0D004541B6 /* EverybodyView.swift */; };
+		CFB4A79C2BC31A14001F3BC7 /* MyCustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB4A79B2BC31A14001F3BC7 /* MyCustomFonts.swift */; };
+		CFB4A79E2BC31A34001F3BC7 /* Pixellari.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFB4A79D2BC31A34001F3BC7 /* Pixellari.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,8 @@
 		CF8C24D52BC1FEC6004541B6 /* HomerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomerView.swift; sourceTree = "<group>"; };
 		CF8C24DB2BC1FEE7004541B6 /* VampireWolfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VampireWolfView.swift; sourceTree = "<group>"; };
 		CF8C24DD2BC1FF0D004541B6 /* EverybodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverybodyView.swift; sourceTree = "<group>"; };
+		CFB4A79B2BC31A14001F3BC7 /* MyCustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomFonts.swift; sourceTree = "<group>"; };
+		CFB4A79D2BC31A34001F3BC7 /* Pixellari.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pixellari.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				CF8C24BE2BC1B0F5004541B6 /* Image.swift */,
+				CFB4A79B2BC31A14001F3BC7 /* MyCustomFonts.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				17DCDD242BC1FC350043B12A /* Sound */,
+				CFB4A79D2BC31A34001F3BC7 /* Pixellari.ttf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -257,6 +263,7 @@
 				6707A1042BC2C9BF00DEF00C /* gameWin.mp3 in Resources */,
 				17DCDD2C2BC21EB20043B12A /* gameOver.mp3 in Resources */,
 				CF8C24B02BC192BD004541B6 /* Preview Assets.xcassets in Resources */,
+				CFB4A79E2BC31A34001F3BC7 /* Pixellari.ttf in Resources */,
 				CF8C24AD2BC192BD004541B6 /* Assets.xcassets in Resources */,
 				174878042BC3072600B65383 /* clubSound.mp3 in Resources */,
 				17DCDD232BC1F9A50043B12A /* openMusic.mp3 in Resources */,
@@ -276,6 +283,7 @@
 				CF8C24CA2BC1DEA6004541B6 /* CharacterData.swift in Sources */,
 				CF8C24C52BC1D633004541B6 /* GameViewTopModel.swift in Sources */,
 				CF8C24D62BC1FEC6004541B6 /* HomerView.swift in Sources */,
+				CFB4A79C2BC31A14001F3BC7 /* MyCustomFonts.swift in Sources */,
 				CF8C24DC2BC1FEE7004541B6 /* VampireWolfView.swift in Sources */,
 				17DCDD212BC1D8DB0043B12A /* GameOverView.swift in Sources */,
 				CF8C24C12BC1B67D004541B6 /* GameViewTop.swift in Sources */,

@@ -48,6 +48,7 @@ struct VampireWolfView: View {
                                         Rectangle()
                                             .frame(width: 80, height: 32)
                                         Text(CharacterData().vampire.costume)
+                                            .font(.custom(.pixellari, size: 20.0))
                                             .foregroundStyle(.red)
                                     }
                                 }
@@ -55,6 +56,7 @@ struct VampireWolfView: View {
                                     Rectangle()
                                         .frame(width: 300, height: 56)
                                     Text("I think I'm going to throw up… ")
+                                        .font(.custom(.pixellari, size: 20.0))
                                         .foregroundStyle(.green)
                                 }
                             }
@@ -65,6 +67,7 @@ struct VampireWolfView: View {
                                         Rectangle()
                                             .frame(width: 90, height: 32)
                                         Text(CharacterData().werewolf.costume)
+                                            .font(.custom(.pixellari, size: 20.0))
                                             .foregroundStyle(.gray)
                                     }
                                 }
@@ -72,6 +75,7 @@ struct VampireWolfView: View {
                                     Rectangle()
                                         .frame(width: 300, height: 56)
                                     Text("Let's go take some more shots!!")
+                                        .font(.custom(.pixellari, size: 20.0))
                                         .foregroundStyle(.green)
                                 }
                             }

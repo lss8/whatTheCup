@@ -43,8 +43,10 @@ struct BartenderView: View {
                                     .resizable()
                                     .frame(width: 72, height: 96)
                                 Text("1")
+                                    .font(.custom(.pixellari, size: 20.0))
                                     .foregroundStyle(.black)
                                 Text(GameTopVM.cup1)
+                                    .font(.custom(.pixellari, size: 20.0))
                                     .foregroundStyle(.black)
                             }
                             VStack {
@@ -52,8 +54,10 @@ struct BartenderView: View {
                                     .resizable()
                                     .frame(width: 72, height: 96)
                                 Text("2")
+                                    .font(.custom(.pixellari, size: 20.0))
                                     .foregroundStyle(.black)
                                 Text(GameTopVM.cup2)
+                                    .font(.custom(.pixellari, size: 20.0))
                                     .foregroundStyle(.black)
                             }
                             VStack {
@@ -61,8 +65,10 @@ struct BartenderView: View {
                                     .resizable()
                                     .frame(width: 72, height: 96)
                                 Text("3")
+                                    .font(.custom(.pixellari, size: 20.0))
                                     .foregroundStyle(.black)
                                 Text(GameTopVM.cup3)
+                                    .font(.custom(.pixellari, size: 20.0))
                                     .foregroundStyle(.black)
                             }
                             VStack {
@@ -70,8 +76,10 @@ struct BartenderView: View {
                                     .resizable()
                                     .frame(width: 72, height: 96)
                                 Text("4")
+                                    .font(.custom(.pixellari, size: 20.0))
                                     .foregroundStyle(.black)
                                 Text(GameTopVM.cup4)
+                                    .font(.custom(.pixellari, size: 20.0))
                                     .foregroundStyle(.black)
                             }
                         }
@@ -83,6 +91,7 @@ struct BartenderView: View {
                                 Rectangle()
                                     .frame(width: 100, height: 32)
                                 Text("Bartender")
+                                    .font(.custom(.pixellari, size: 20.0))
                                     .foregroundStyle(.purple)
                             }
                             Spacer()
@@ -91,6 +100,7 @@ struct BartenderView: View {
                             Rectangle()
                                 .frame(width: 360, height: 160)
                             Text("Seelct the cup to define who you think it belongs to. For each cup you guess right, you get a point. Only drink a cup if you're sure it's yours.")
+                                .font(.custom(.pixellari, size: 20.0))
                                 .foregroundStyle(.green)
                                 .frame(width: 330, height: 150)
                         }

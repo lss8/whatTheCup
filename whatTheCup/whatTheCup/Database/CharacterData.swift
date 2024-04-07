@@ -20,8 +20,8 @@ struct CharacterData {
         id: 1,
         costume: "Vampire",
         drink: "Bloody Mary",
-        image: Image.icon.logo,
-        head: Image.icon.startButton)
+        image: Image.chars.vampire,
+        head: Image.chars.vampireHead)
     
     let werewolf: Character = Character(
         id: 2,
@@ -41,6 +41,6 @@ struct CharacterData {
         id: 4,
         costume: "Alien",
         drink: "",
-        image: Image.icon.logo,
-        head: Image.icon.startButton)
+        image: Image.chars.alien,
+        head: Image.chars.alienHead)
 }

@@ -47,6 +47,7 @@ struct HomerView: View {
                                     .frame(width: 120, height: 35)
                                 Text(CharacterData().homer.costume)
                                     .padding()
+                                    .font(.custom(.pixellari, size: 20.0))
                                     .foregroundStyle(.yellow)
                             }
                             Spacer()
@@ -55,7 +56,9 @@ struct HomerView: View {
                             Rectangle()
                                 .frame(width: 350, height: 200)
                             Text("They keep complimenting my bald head thinking its part of the costume… I'm just calvo.")
-                                .foregroundStyle(.green)
+                                    .font(.custom(.pixellari, size: 20.0))
+                                    .padding(.horizontal, 4.0)
+                                    .foregroundStyle(.green)
                         }
                     }
                 }
