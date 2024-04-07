@@ -13,15 +13,21 @@ struct GameOverView: View {
     
     var body: some View {
         ZStack{
-            Image.icon.startBg
+            Image.icon.gameOverBG
                 .ignoresSafeArea()
             VStack(spacing: 40.0){
                 VStack(spacing: 16){
                     VStack {
-                        Text(gameWon ? "YOU WIN!!" : "YOU LOST!!")
-                            .font(.largeTitle)
-                            .fontWeight(.regular)
-                            .foregroundColor(.white)
+//                        Text(gameWon ? "YOU WIN!!" : "YOU LOST!!")
+//                            .font(.largeTitle)
+//                            .fontWeight(.regular)
+//                            .foregroundColor(.white)
+                        if gameWon {
+                            Image.icon.winText
+                        }
+                        else{
+                            Image.icon.loseText
+                        }
                     }
                     if gameWon && (score > 1) {
                         HStack{
@@ -52,13 +58,17 @@ struct GameOverView: View {
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/,
                        label: {
                     ZStack{
-                        RoundedRectangle(cornerRadius: 48)
-                            .frame(width: 192,height: 53)
-                            .foregroundColor(.red)
-                        Text("Play Again!")
-                            .foregroundColor(.white)
+                        if gameWon{
+                            Image.icon.playAgain
+                        }
+                        else{
+                            Image.icon.startOver
+                        }
                     }
                 })
+            }
+            .onAppear{
+                playSoundtrack(sound: gameWon ? "gameWin" : "gameOver")
             }
         }
     }

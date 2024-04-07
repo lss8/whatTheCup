@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17AEEA4E2BC2783C00C7C3E8 /* gameWin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17AEEA4D2BC2783C00C7C3E8 /* gameWin.mp3 */; };
 		17DCDD212BC1D8DB0043B12A /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DCDD202BC1D8DB0043B12A /* GameOverView.swift */; };
 		17DCDD232BC1F9A50043B12A /* openMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17DCDD222BC1F9A50043B12A /* openMusic.mp3 */; };
 		17DCDD262BC1FC6E0043B12A /* sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DCDD252BC1FC6E0043B12A /* sound.swift */; };
 		17DCDD2C2BC21EB20043B12A /* gameOver.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17DCDD2B2BC21EB20043B12A /* gameOver.mp3 */; };
-		17DCDD2E2BC222E20043B12A /* gameWin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17DCDD2D2BC222E20043B12A /* gameWin.mp3 */; };
 		67E086072BC1C282003A4711 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E086062BC1C282003A4711 /* OnboardingView.swift */; };
 		CF4F21092BC22AEB00A1BCE8 /* BartenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4F21082BC22AEB00A1BCE8 /* BartenderView.swift */; };
 		CF4F210B2BC233DF00A1BCE8 /* CupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4F210A2BC233DF00A1BCE8 /* CupView.swift */; };
@@ -32,11 +32,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17AEEA4D2BC2783C00C7C3E8 /* gameWin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = gameWin.mp3; path = ../../../../../../../Music/GarageBand/gameWin.mp3; sourceTree = "<group>"; };
 		17DCDD202BC1D8DB0043B12A /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 		17DCDD222BC1F9A50043B12A /* openMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = openMusic.mp3; sourceTree = "<group>"; };
 		17DCDD252BC1FC6E0043B12A /* sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sound.swift; sourceTree = "<group>"; };
 		17DCDD2B2BC21EB20043B12A /* gameOver.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameOver.mp3; sourceTree = "<group>"; };
-		17DCDD2D2BC222E20043B12A /* gameWin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameWin.mp3; sourceTree = "<group>"; };
 		67E086062BC1C282003A4711 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		CF4F21082BC22AEB00A1BCE8 /* BartenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BartenderView.swift; sourceTree = "<group>"; };
 		CF4F210A2BC233DF00A1BCE8 /* CupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupView.swift; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 		17DCDD242BC1FC350043B12A /* Sound */ = {
 			isa = PBXGroup;
 			children = (
-				17DCDD2D2BC222E20043B12A /* gameWin.mp3 */,
+				17AEEA4D2BC2783C00C7C3E8 /* gameWin.mp3 */,
 				17DCDD222BC1F9A50043B12A /* openMusic.mp3 */,
 				17DCDD2B2BC21EB20043B12A /* gameOver.mp3 */,
 				17DCDD252BC1FC6E0043B12A /* sound.swift */,
@@ -251,7 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17DCDD2E2BC222E20043B12A /* gameWin.mp3 in Resources */,
+				17AEEA4E2BC2783C00C7C3E8 /* gameWin.mp3 in Resources */,
 				17DCDD2C2BC21EB20043B12A /* gameOver.mp3 in Resources */,
 				CF8C24B02BC192BD004541B6 /* Preview Assets.xcassets in Resources */,
 				CF8C24AD2BC192BD004541B6 /* Assets.xcassets in Resources */,
