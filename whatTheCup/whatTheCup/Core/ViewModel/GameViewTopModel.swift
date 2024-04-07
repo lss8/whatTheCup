@@ -29,10 +29,17 @@ class GameViewTopModel: ObservableObject {
     @Published var score = 0
     
     @Published var drinks: [(nome: String, imagem: Image, bebado: String)] = [
-        ("Bloody Mary", Image("Cup"), CharacterData().vampire.costume),
-        ("Beer", Image("Cup"), CharacterData().homer.costume),
-        ("Coke", Image("Cup"), CharacterData().goblin.costume),
-        ("Eggnog", Image("Cup"), "Esse é o meu!")
+        ("Bloody Mary", Image.drinks.bloodyMary, CharacterData().vampire.costume),
+        ("Beer", Image.drinks.beer, CharacterData().homer.costume),
+        ("Coke", Image.drinks.coke, CharacterData().goblin.costume),
+        ("Eggnog", Image.drinks.gemada, "Esse é o meu!")
+    ]
+    
+    @Published var onboardingDialogue: [String] = [
+        "Hello, there! Good evening, fella. Welcome to The Cyber Cup Carnival, what is gonna be tonight?",
+        "Here you go! Hope you enjoy the evening carefully... CAREFULLY!",
+        "OH MY GOD! Look at the cups! It's a mess! You can discover wich one is your cup, by helping me find out whose cup is whose, by talking and observing the people around the party.",
+        "Select the cup to define who you think it belongs to. For each cup you guess right and help me, you get a bar point for the next carnival. But remember... only drink a cup if you're SURE it's yours."
     ]
     
     func charClicked(name: String) {

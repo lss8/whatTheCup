@@ -42,7 +42,7 @@ struct HomeView: View {
                 }
                 VStack(spacing: 0) {
                     Image.icon.whatDCup
-                    NavigationLink(destination: GameViewTop()) {
+                    NavigationLink(destination: OnboardingView()) {
                         Image.icon.startButton1
                     }
                     
