@@ -11,6 +11,7 @@ import SwiftUI
 extension Image {
     static let icon = Icons()
     static let drinks = Drinks()
+    static let personagens = Personagem()
 }
 
 struct Icons {
@@ -39,4 +40,9 @@ struct Drinks {
     let coke = Image("Coquinha")
     let gemada = Image("Gemada")
 }
+
+struct Personagem {
+    let homer = Image("Homer")
+}
+
 

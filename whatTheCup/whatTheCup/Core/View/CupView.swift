@@ -55,12 +55,6 @@ struct CupView: View {
                                 .frame(width: 50, height: 50)
                         }
                         Button {
-                            GameTopVM.guessCup(num: cupCounter, name: CharacterData().thor.costume)
-                        } label: {
-                            CharacterData().thor.head
-                                .frame(width: 50, height: 50)
-                        }
-                        Button {
                             GameTopVM.guessCup(num: cupCounter, name: CharacterData().vampire.costume)
                         } label: {
                             CharacterData().vampire.head

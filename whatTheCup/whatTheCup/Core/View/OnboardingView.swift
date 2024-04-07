@@ -34,6 +34,7 @@ struct OnboardingView: View {
                         if soundState {
                             Image(systemName: "speaker.wave.3.fill")
                                 .foregroundColor(.black)
+                            
                         } else {
                             Image(systemName: "speaker.slash.fill")
                                 .foregroundColor(.black)
@@ -58,16 +59,13 @@ struct OnboardingView: View {
                         Image.icon.dialogueBox
                             .resizable()
                             .frame(width: 357, height: 222)
-                          //era 20
                             ZStack {
-//                                HStack{
                                     Text(GameTopVM.onboardingDialogue[dialogueCounter])
                                     .frame(width: 300, height: 300)
                                     .font(.system(size: 20))
                                     .lineLimit(5)
-                                        .foregroundStyle(.green)
-//
-//                                }
+                                    .foregroundStyle(.green)
+
                                 HStack(alignment: .bottom){
                                     Spacer()
                                     Button {

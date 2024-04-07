@@ -13,15 +13,9 @@ struct CharacterData {
         id: 0,
         costume: "Homer",
         drink: "Beer",
-        image: Image.icon.logo,
+        image: Image.personagens.homer,
         head: Image.icon.startButton)
     
-    let thor: Character = Character(
-        id: 1,
-        costume: "Thor",
-        drink: "",
-        image: Image.icon.logo,
-        head: Image.icon.startButton)
     
     let vampire: Character = Character(
         id: 2,

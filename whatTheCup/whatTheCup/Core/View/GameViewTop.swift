@@ -18,9 +18,7 @@ struct GameViewTop: View {
         ZStack {
             Image.icon.background
                 .ignoresSafeArea()
-            
             NavigationLink(destination: HomerView(), isActive: $GameTopVM.homerView) {EmptyView()}
-            NavigationLink(destination: ThorView(), isActive: $GameTopVM.thorView) {EmptyView()}
             NavigationLink(destination: VampireWolfView(), isActive: $GameTopVM.vampireMageView) {EmptyView()}
             NavigationLink(destination: EverybodyView(), isActive: $GameTopVM.everybodyView) {EmptyView()}
             
@@ -91,13 +89,7 @@ struct GameViewTop: View {
                                 }
                             }
                             Spacer()
-                            Button {
-                                GameTopVM.charClicked(name: CharacterData().thor.costume)
-                            } label: {
-                                CharacterData().thor.image
-                                    .resizable()
-                                    .frame(width: 100, height: 100)
-                            }
+                            
                         }
                         HStack {
                             Button {

@@ -83,21 +83,22 @@ struct BartenderView: View {
                                 }
                             }
                         }
-                        VStack {
+                        VStack(alignment: .leading, spacing: -10) {
                             HStack {
                                 ZStack {
                                     Rectangle()
-                                        .frame(width: 80, height: 32)
+                                        .frame(width: 100, height: 32)
                                     Text("Bartender")
-                                        .foregroundStyle(.yellow)
+                                        .foregroundStyle(.purple)
                                 }
                                 Spacer()
                             }
                             ZStack {
                                 Rectangle()
                                     .frame(width: 360, height: 160)
-                                Text("Seelct the cup to define who you think it belongs to. For each cup you guess right, you get a point. Only drink a cup if you're sure it's yours.")
-                                    .foregroundStyle(.yellow)
+                                Text("Select the cup to define who you think it belongs to. For each cup you guess right, you get a point. Only drink a cup if you're sure it's yours.")
+                                    .foregroundStyle(.green)
+                                    .frame(width: 330, height: 150)
                             }
                         }
                         .padding(.horizontal, 16.0)
