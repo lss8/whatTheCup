@@ -40,6 +40,8 @@ struct Icons {
     let bgFinal4Cup = Image("BackgroundFinal3")
     let bgFinalBlur = Image("BackgroundFinalBlur")
     let bgCup = Image("BackgroundCup")
+    let loseBunny = Image("loseBunny")
+    let DrinkBG = Image("DrinkBG")
 }
 
 struct Drinks {

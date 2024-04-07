@@ -17,7 +17,7 @@ struct CupView: View {
     
     var body: some View {
         ZStack {
-            Image.icon.bgCup
+            Image.icon.DrinkBG
                 .ignoresSafeArea()
             
             NavigationLink(destination: GameOverView(gameWon: false, score: GameTopVM.score), isActive: $GameTopVM.gameLost) {EmptyView()}
