@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CupView: View {
     @StateObject var GameTopVM: GameViewTopModel
-    @State var selection1: String? = nil
+    @State var cupCounter = 0
     
     init() {
         _GameTopVM = StateObject(wrappedValue: GameViewTopModel())
@@ -19,6 +19,9 @@ struct CupView: View {
         ZStack {
             Image("HalfBG")
                 .ignoresSafeArea()
+            
+            NavigationLink(destination: GameOverView(gameWon: false, score: GameTopVM.score), isActive: $GameTopVM.gameLost) {EmptyView()}
+            NavigationLink(destination: GameOverView(gameWon: true, score: GameTopVM.score), isActive: $GameTopVM.gameWon) {EmptyView()}
             
             VStack(spacing: 36.0) {
                 HStack {
@@ -41,35 +44,81 @@ struct CupView: View {
                             .foregroundStyle(.gray)
                         Spacer()
                     }
-                    DropDownPicker(
-                        selection: $selection1,
-                        options: [
-                            CharacterData().homer.costume,
-                            CharacterData().thor.costume,
-                            CharacterData().tinker.costume,
-                            CharacterData().mage.costume,
-                            CharacterData().vampire.costume,
-                            CharacterData().werewolf.costume,
-                            CharacterData().zombie.costume,
-                            CharacterData().goblin.costume,
-                            CharacterData().alien.costume,
-                        ]
-                    )
+                    .padding(.horizontal, 32.0)
+                }
+                VStack(spacing: 64.0) {
+                    HStack(spacing: 64.0) {
+                        Button {
+                            GameTopVM.guessCup(num: cupCounter, name: CharacterData().homer.costume)
+                        } label: {
+                            CharacterData().homer.head
+                                .frame(width: 50, height: 50)
+                        }
+                        Button {
+                            GameTopVM.guessCup(num: cupCounter, name: CharacterData().thor.costume)
+                        } label: {
+                            CharacterData().thor.head
+                                .frame(width: 50, height: 50)
+                        }
+                        Button {
+                            GameTopVM.guessCup(num: cupCounter, name: CharacterData().vampire.costume)
+                        } label: {
+                            CharacterData().vampire.head
+                                .frame(width: 50, height: 50)
+                        }
+                    }
+                    HStack(spacing: 64.0) {
+                        Button {
+                            GameTopVM.guessCup(num: cupCounter, name: CharacterData().werewolf.costume)
+                        } label: {
+                            CharacterData().werewolf.head
+                                .frame(width: 50, height: 50)
+                        }
+                        Button {
+                            GameTopVM.guessCup(num: cupCounter, name: CharacterData().goblin.costume)
+                        } label: {
+                            CharacterData().goblin.head
+                                .frame(width: 50, height: 50)
+                        }
+                        Button {
+                            GameTopVM.guessCup(num: cupCounter, name: CharacterData().alien.costume) 
+                        } label: {
+                            CharacterData().alien.head
+                                .frame(width: 50, height: 50)
+                        }
+                    }
                 }
                 VStack {
-                    Image("Cup")
+                    GameTopVM.drinks[cupCounter].imagem // BEBIDAS
                         .resizable()
                         .frame(width: 256, height: 320)
                     HStack {
-                        Image(systemName: "arrow.left")
-                        Text("Number")
-                        Image(systemName: "arrow.right")
+                        Button {
+                            if cupCounter > 0 {
+                                cupCounter = cupCounter - 1
+                            }
+                        } label: {
+                            Image(systemName: "arrow.left")
+                        }
+                        Text(String(cupCounter+1))
+                        Button {
+                            if cupCounter < 3 {
+                                cupCounter = cupCounter + 1
+                            }
+                        } label: {
+                            Image(systemName: "arrow.right")
+                        }
                     }
                 }
                 VStack {
                     Text("Se acha que esse é o seu copo...")
-                    Image("DrinkButton")
+                    Button {
+                        GameTopVM.guessCup(num: cupCounter, name: "Esse é o meu!")
+                    } label: {
+                        Image("DrinkButton")
+                    }
                 }
+                Spacer()
             }
         }
     }

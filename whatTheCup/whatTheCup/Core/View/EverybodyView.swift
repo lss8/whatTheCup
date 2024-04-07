@@ -38,7 +38,6 @@ struct EverybodyView: View {
                 .padding(.horizontal, 32.0)
                 ZStack {
                     HStack {
-                        CharacterData().zombie.image
                         CharacterData().goblin.image
                         CharacterData().alien.image
                     }
@@ -48,7 +47,7 @@ struct EverybodyView: View {
                             ZStack {
                                 Rectangle()
                                     .frame(width: 72, height: 32)
-                                Text(CharacterData().zombie.costume)
+                                Text(CharacterData().goblin.costume)
                                     .foregroundStyle(.yellow)
                             }
                             Spacer()
@@ -64,7 +63,7 @@ struct EverybodyView: View {
                             ZStack {
                                 Rectangle()
                                     .frame(width: 72, height: 32)
-                                Text(CharacterData().goblin.costume)
+                                Text(CharacterData().alien.costume)
                                     .foregroundStyle(.yellow)
                             }
                         }
@@ -72,21 +71,6 @@ struct EverybodyView: View {
                             Rectangle()
                                 .frame(width: 360, height: 56)
                             Text("Geez, you're so grumpy! Your costume suits you well!")
-                                .foregroundStyle(.yellow)
-                        }
-                        HStack {
-                            ZStack {
-                                Rectangle()
-                                    .frame(width: 72, height: 32)
-                                Text(CharacterData().alien.costume)
-                                    .foregroundStyle(.yellow)
-                            }
-                            Spacer()
-                        }
-                        ZStack {
-                            Rectangle()
-                                .frame(width: 360, height: 56)
-                            Text("He's a Capricorn, girl. He can't help himself.")
                                 .foregroundStyle(.yellow)
                         }
                     }

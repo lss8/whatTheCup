@@ -23,13 +23,23 @@ class GameViewTopModel: ObservableObject {
     @Published var cup3 = "?"
     @Published var cup4 = "?"
     
+    @Published var gameWon = false
+    @Published var gameLost = false
+    
+    @Published var score = 0
+    
+    @Published var drinks: [(nome: String, imagem: Image, bebado: String)] = [
+        ("Bloody Mary", Image("Cup"), CharacterData().vampire.costume),
+        ("Beer", Image("Cup"), CharacterData().homer.costume),
+        ("Coke", Image("Cup"), CharacterData().goblin.costume),
+        ("Eggnog", Image("Cup"), "Esse é o meu!")
+    ]
+    
     func charClicked(name: String) {
         if name == CharacterData().homer.costume {
             homerView = true
         } else if name == CharacterData().thor.costume {
             thorView = true
-        } else if name == CharacterData().tinker.costume || name == CharacterData().mage.costume {
-            tinkerMageView = true
         } else if name == CharacterData().vampire.costume || name == CharacterData().werewolf.costume {
             vampireMageView = true
         } else {
@@ -38,6 +48,21 @@ class GameViewTopModel: ObservableObject {
     }
     
     func guessCup(num: Int, name: String) {
+        if num != 3 {
+            if drinks[num].bebado == name {
+                score += 1
+            } else {
+                gameLost = true
+            }
+        } else {
+            if drinks[num].bebado == name {
+                score += 1
+                gameWon = true
+            } else {
+                gameLost = true
+            }
+        }
         
     }
+    
 }

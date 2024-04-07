@@ -21,7 +21,6 @@ struct GameViewTop: View {
             
             NavigationLink(destination: HomerView(), isActive: $GameTopVM.homerView) {EmptyView()}
             NavigationLink(destination: ThorView(), isActive: $GameTopVM.thorView) {EmptyView()}
-            NavigationLink(destination: TinkerMageView(), isActive: $GameTopVM.tinkerMageView) {EmptyView()}
             NavigationLink(destination: VampireWolfView(), isActive: $GameTopVM.vampireMageView) {EmptyView()}
             NavigationLink(destination: EverybodyView(), isActive: $GameTopVM.everybodyView) {EmptyView()}
             
@@ -72,24 +71,6 @@ struct GameViewTop: View {
                                     .resizable()
                                     .frame(width: 100, height: 100)
                             }
-                            Spacer()
-                            VStack {
-                                Spacer()
-                                Button {
-                                    GameTopVM.charClicked(name: CharacterData().tinker.costume)
-                                } label: {
-                                    CharacterData().tinker.image
-                                        .resizable()
-                                        .frame(width: 100, height: 100)
-                                }
-                            }
-                            Button {
-                                GameTopVM.charClicked(name: CharacterData().mage.costume)
-                            } label: {
-                                CharacterData().mage.image
-                                    .resizable()
-                                    .frame(width: 100, height: 100)
-                            }
                         }
                         HStack {
                             Button {
@@ -135,13 +116,6 @@ struct GameViewTop: View {
                                         .resizable()
                                         .frame(width: 100, height: 100)
                                 }
-                            }
-                            Button {
-                                GameTopVM.charClicked(name: CharacterData().zombie.costume)
-                            } label: {
-                                CharacterData().zombie.image
-                                    .resizable()
-                                    .frame(width: 100, height: 100)
                             }
                         }
                     }
