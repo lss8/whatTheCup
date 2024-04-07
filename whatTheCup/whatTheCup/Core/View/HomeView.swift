@@ -60,10 +60,11 @@ struct HomeView: View {
             if !GameTopVM.soundState {
                 GameTopVM.soundState.toggle()
             }
+            
         }
     }
 }
 
-//#Preview {
-//    HomeView()
-//}
+#Preview {
+    HomeView()
+}

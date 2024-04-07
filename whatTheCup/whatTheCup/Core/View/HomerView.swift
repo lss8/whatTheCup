@@ -16,7 +16,7 @@ struct HomerView: View {
     
     var body: some View {
         ZStack {
-            Image.icon.background
+            Image.icon.bgFinalBlur
                 .ignoresSafeArea()
             VStack {
                 HStack {

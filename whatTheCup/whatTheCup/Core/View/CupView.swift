@@ -17,7 +17,7 @@ struct CupView: View {
     
     var body: some View {
         ZStack {
-            Image("HalfBG")
+            Image.icon.bgCup
                 .ignoresSafeArea()
             
             NavigationLink(destination: GameOverView(gameWon: false, score: GameTopVM.score), isActive: $GameTopVM.gameLost) {EmptyView()}
@@ -38,47 +38,44 @@ struct CupView: View {
                         }
                     }
                 }
-                VStack {
-                    HStack {
-                        Text("Suspects")
-                            .foregroundStyle(.gray)
-                        Spacer()
-                    }
-                    .padding(.horizontal, 32.0)
-                }
-                VStack(spacing: 64.0) {
-                    HStack(spacing: 64.0) {
+                VStack(spacing: 32.0) {
+                    HStack(spacing: 32.0) {
                         Button {
                             GameTopVM.guessCup(num: cupCounter, name: CharacterData().homer.costume)
                         } label: {
                             CharacterData().homer.head
-                                .frame(width: 50, height: 50)
+                                .resizable()
+                                .frame(width: 100, height: 100)
                         }
                         Button {
                             GameTopVM.guessCup(num: cupCounter, name: CharacterData().vampire.costume)
                         } label: {
                             CharacterData().vampire.head
-                                .frame(width: 50, height: 50)
+                                .resizable()
+                                .frame(width: 100, height: 100)
                         }
                     }
-                    HStack(spacing: 64.0) {
+                    HStack(spacing: 32.0) {
                         Button {
                             GameTopVM.guessCup(num: cupCounter, name: CharacterData().werewolf.costume)
                         } label: {
                             CharacterData().werewolf.head
-                                .frame(width: 50, height: 50)
+                                .resizable()
+                                .frame(width: 100, height: 100)
                         }
                         Button {
                             GameTopVM.guessCup(num: cupCounter, name: CharacterData().goblin.costume)
                         } label: {
                             CharacterData().goblin.head
-                                .frame(width: 50, height: 50)
+                                .resizable()
+                                .frame(width: 100, height: 100)
                         }
                         Button {
                             GameTopVM.guessCup(num: cupCounter, name: CharacterData().alien.costume) 
                         } label: {
                             CharacterData().alien.head
-                                .frame(width: 50, height: 50)
+                                .resizable()
+                                .frame(width: 100, height: 100)
                         }
                     }
                 }
@@ -93,6 +90,7 @@ struct CupView: View {
                             }
                         } label: {
                             Image(systemName: "arrow.left")
+                                .foregroundColor(.purple)
                         }
                         Text(String(cupCounter+1))
                         Button {
@@ -101,6 +99,7 @@ struct CupView: View {
                             }
                         } label: {
                             Image(systemName: "arrow.right")
+                                .foregroundColor(.purple)
                         }
                     }
                 }

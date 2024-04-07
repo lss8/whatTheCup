@@ -54,7 +54,7 @@ struct GameOverView: View {
                     }
                 }
                 
-                Image(gameWon ? "wonner" : "loser")
+                Image(gameWon ? "Bunny" : "loser")
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/,
                        label: {
                     ZStack{

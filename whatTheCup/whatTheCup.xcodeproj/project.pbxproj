@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		174878042BC3072600B65383 /* clubSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 174878032BC3072600B65383 /* clubSound.mp3 */; };
 		17DCDD212BC1D8DB0043B12A /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DCDD202BC1D8DB0043B12A /* GameOverView.swift */; };
 		17DCDD232BC1F9A50043B12A /* openMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17DCDD222BC1F9A50043B12A /* openMusic.mp3 */; };
 		17DCDD262BC1FC6E0043B12A /* sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DCDD252BC1FC6E0043B12A /* sound.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		174878032BC3072600B65383 /* clubSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clubSound.mp3; sourceTree = "<group>"; };
 		17DCDD202BC1D8DB0043B12A /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 		17DCDD222BC1F9A50043B12A /* openMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = openMusic.mp3; sourceTree = "<group>"; };
 		17DCDD252BC1FC6E0043B12A /* sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sound.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		17DCDD242BC1FC350043B12A /* Sound */ = {
 			isa = PBXGroup;
 			children = (
+				174878032BC3072600B65383 /* clubSound.mp3 */,
 				6707A1032BC2C9BF00DEF00C /* gameWin.mp3 */,
 				17DCDD222BC1F9A50043B12A /* openMusic.mp3 */,
 				17DCDD2B2BC21EB20043B12A /* gameOver.mp3 */,
@@ -255,6 +258,7 @@
 				17DCDD2C2BC21EB20043B12A /* gameOver.mp3 in Resources */,
 				CF8C24B02BC192BD004541B6 /* Preview Assets.xcassets in Resources */,
 				CF8C24AD2BC192BD004541B6 /* Assets.xcassets in Resources */,
+				174878042BC3072600B65383 /* clubSound.mp3 in Resources */,
 				17DCDD232BC1F9A50043B12A /* openMusic.mp3 in Resources */,
 				6707A1062BC2E79300DEF00C /* Sipping - Sound Effect.mp3 in Resources */,
 			);

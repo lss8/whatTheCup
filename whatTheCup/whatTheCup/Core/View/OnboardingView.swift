@@ -20,29 +20,43 @@ struct OnboardingView: View {
     var body: some View {
         
         ZStack{
-            Image.icon.background3
-                .ignoresSafeArea()
+            if dialogueCounter == 0 {
+                Image.icon.bgFinalnoCup
+                    .ignoresSafeArea()
+            } else if dialogueCounter == 1 {
+                Image.icon.bgFinal1Cup
+                    .ignoresSafeArea()
+            } else if dialogueCounter > 1 {
+                Image.icon.bgFinal4Cup
+                    .ignoresSafeArea()
+            }
             
             NavigationLink(destination: GameViewTop(), isActive: $changeView) {EmptyView()}
             
             VStack(spacing: 420){
-                HStack{
+                HStack {
                     Spacer()
                     Button {
-                        soundState.toggle()
+                        GameTopVM.soundState.toggle()
+//                        if GameTopVM.soundState {
+//                            playSoundtrack(sound: "clubSound")
+//                        } else {
+//                            stopSoundtrack(sound: "clubSound")
+//                        }
                     } label: {
-                        if soundState {
+                        if GameTopVM.soundState{
                             Image(systemName: "speaker.wave.3.fill")
-                                .foregroundColor(.black)
-                            
+                                .foregroundColor(.white)
                         } else {
                             Image(systemName: "speaker.slash.fill")
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                         }
                     }
-                    
+                    .padding(.trailing, 20)
+                    .padding(.top, 40)
+                    .padding(.bottom, 80)
+                }
                 
-                }.padding(.trailing)
                 VStack(alignment: .leading, spacing: 0) {
                     HStack(spacing: 0.0) {
                         ZStack {
@@ -53,8 +67,6 @@ struct OnboardingView: View {
                                 .foregroundStyle(.purple)
                         }
                     }
-                    
-
                     ZStack {
                         Image.icon.dialogueBox
                             .resizable()
@@ -81,12 +93,15 @@ struct OnboardingView: View {
                                 }
                                 
                             }.frame(width: 200, height: 100)
-                            
-                        
                     }
                 }
             }.ignoresSafeArea()
-        }.ignoresSafeArea()
+        }
+        .ignoresSafeArea()
+        .onAppear{
+            //            playSoundtrack(sound: "clubSound")
+        }
+        
     }
 }
 

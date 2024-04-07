@@ -16,10 +16,8 @@ struct VampireWolfView: View {
     
     var body: some View {
         ZStack {
-            Image("backg")
-                .resizable()
+            Image.icon.bgFinalBlur
                 .ignoresSafeArea()
-                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
             VStack {
                 HStack {
                     Spacer()
