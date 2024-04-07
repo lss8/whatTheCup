@@ -25,7 +25,7 @@ struct HomeView: View {
                         GameTopVM.soundState.toggle()
                         if GameTopVM.soundState {
                             playSoundtrack(sound: "openMusic")
-                        } else{
+                        } else {
                             stopSoundtrack(sound: "openMusic")
                         }
                         

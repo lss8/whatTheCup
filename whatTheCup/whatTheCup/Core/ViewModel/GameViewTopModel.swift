@@ -18,6 +18,11 @@ class GameViewTopModel: ObservableObject {
     @Published var everybodyView = false
     @Published var selectedCharacter = ""
     
+    @Published var cup1 = "?"
+    @Published var cup2 = "?"
+    @Published var cup3 = "?"
+    @Published var cup4 = "?"
+    
     func charClicked(name: String) {
         if name == CharacterData().homer.costume {
             homerView = true
@@ -30,5 +35,9 @@ class GameViewTopModel: ObservableObject {
         } else {
             everybodyView = true
         }
+    }
+    
+    func guessCup(num: Int, name: String) {
+        
     }
 }

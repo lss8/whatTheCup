@@ -16,10 +16,8 @@ struct HomerView: View {
     
     var body: some View {
         ZStack {
-            Image("backg")
-                .resizable()
+            Image.icon.background
                 .ignoresSafeArea()
-                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
             VStack {
                 HStack {
                     Spacer()
