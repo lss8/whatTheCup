@@ -31,6 +31,8 @@ struct Icons {
     let background3 = Image("BACKGROUND_REAL")
     let dialogueBox = Image("Box")
     let arrow = Image("Seta_Dialogo")
+    let bunny = Image("Bunny")
+    let score2 = Image("score2")
 }
 
 struct Drinks {
