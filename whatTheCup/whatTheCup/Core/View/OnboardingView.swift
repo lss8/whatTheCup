@@ -34,12 +34,17 @@ struct OnboardingView: View {
             NavigationLink(destination: GameViewTop(), isActive: $changeView) {EmptyView()}
             
             VStack(spacing: 420){
-                HStack{
+                HStack {
                     Spacer()
                     Button {
-                        soundState.toggle()
+                        GameTopVM.soundState.toggle()
+//                        if GameTopVM.soundState {
+//                            playSoundtrack(sound: "clubSound")
+//                        } else {
+//                            stopSoundtrack(sound: "clubSound")
+//                        }
                     } label: {
-                        if soundState {
+                        if GameTopVM.soundState{
                             Image(systemName: "speaker.wave.3.fill")
                                 .foregroundColor(.white)
                         } else {
@@ -47,9 +52,11 @@ struct OnboardingView: View {
                                 .foregroundColor(.white)
                         }
                     }
-                    
+                    .padding(.trailing, 20)
+                    .padding(.top, 40)
+                    .padding(.bottom, 80)
+                }
                 
-                }.padding(.trailing)
                 VStack(alignment: .leading, spacing: 0) {
                     HStack(spacing: 0.0) {
                         ZStack {
@@ -92,7 +99,12 @@ struct OnboardingView: View {
                     }
                 }
             }.ignoresSafeArea()
-        }.ignoresSafeArea()
+        }
+        .ignoresSafeArea()
+        .onAppear{
+            //            playSoundtrack(sound: "clubSound")
+        }
+        
     }
 }
 

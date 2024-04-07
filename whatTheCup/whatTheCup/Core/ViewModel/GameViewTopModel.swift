@@ -11,6 +11,7 @@ import SwiftUI
 class GameViewTopModel: ObservableObject {
     
     @Published var soundState = true
+    @Published var soundState2 = true
     @Published var homerView = false
     @Published var thorView = false
     @Published var tinkerMageView = false
