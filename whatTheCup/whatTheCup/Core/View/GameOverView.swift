@@ -13,7 +13,7 @@ struct GameOverView: View {
     
     var body: some View {
         ZStack{
-            Color(.gray)
+            Image.icon.startBg
                 .ignoresSafeArea()
             VStack(spacing: 40.0){
                 VStack(spacing: 16){
@@ -21,6 +21,7 @@ struct GameOverView: View {
                         Text(gameWon ? "YOU WIN!!" : "YOU LOST!!")
                             .font(.largeTitle)
                             .fontWeight(.regular)
+                            .foregroundColor(.white)
                     }
                     if gameWon && (score > 1) {
                         HStack{
