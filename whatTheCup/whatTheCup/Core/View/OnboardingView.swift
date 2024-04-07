@@ -71,16 +71,13 @@ struct OnboardingView: View {
                         Image.icon.dialogueBox
                             .resizable()
                             .frame(width: 357, height: 222)
-                          //era 20
                             ZStack {
-//                                HStack{
                                     Text(GameTopVM.onboardingDialogue[dialogueCounter])
                                     .frame(width: 300, height: 300)
                                     .font(.system(size: 20))
                                     .lineLimit(5)
-                                        .foregroundStyle(.green)
-//
-//                                }
+                                    .foregroundStyle(.green)
+
                                 HStack(alignment: .bottom){
                                     Spacer()
                                     Button {

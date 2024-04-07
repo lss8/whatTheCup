@@ -39,40 +39,45 @@ struct VampireWolfView: View {
                         CharacterData().vampire.image
                         CharacterData().werewolf.image
                     }
-                    VStack {
-                        Spacer()
-                        HStack {
-                            ZStack {
-                                Rectangle()
-                                    .frame(width: 72, height: 32)
-                                Text(CharacterData().vampire.costume)
-                                    .foregroundStyle(.yellow)
-                            }
+                    VStack{
+                        VStack {
                             Spacer()
-                        }
-                        ZStack {
-                            Rectangle()
-                                .frame(width: 360, height: 56)
-                            Text("I think I'm going to throw up… HELL YEAH!!")
-                                .foregroundStyle(.yellow)
-                        }
-                        HStack {
-                            Spacer()
-                            ZStack {
-                                Rectangle()
-                                    .frame(width: 72, height: 32)
-                                Text(CharacterData().werewolf.costume)
-                                    .foregroundStyle(.yellow)
+                            VStack(alignment: .leading, spacing: -5) {
+                                HStack {
+                                    ZStack {
+                                        Rectangle()
+                                            .frame(width: 80, height: 32)
+                                        Text(CharacterData().vampire.costume)
+                                            .foregroundStyle(.red)
+                                    }
+                                }
+                                ZStack {
+                                    Rectangle()
+                                        .frame(width: 300, height: 56)
+                                    Text("I think I'm going to throw up… ")
+                                        .foregroundStyle(.green)
+                                }
                             }
-                        }
-                        ZStack {
-                            Rectangle()
-                                .frame(width: 360, height: 56)
-                            Text("Let's go take some more shots!!")
-                                .foregroundStyle(.yellow)
+                            
+                            VStack(alignment: .leading, spacing: 0) {
+                                HStack {
+                                    ZStack {
+                                        Rectangle()
+                                            .frame(width: 90, height: 32)
+                                        Text(CharacterData().werewolf.costume)
+                                            .foregroundStyle(.gray)
+                                    }
+                                }
+                                ZStack {
+                                    Rectangle()
+                                        .frame(width: 300, height: 56)
+                                    Text("Let's go take some more shots!!")
+                                        .foregroundStyle(.green)
+                                }
+                            }
                         }
                     }
-                    .padding(.horizontal, 16.0)
+                    .padding(.trailing, 50.0)
                 }
             }
             .padding(.vertical, 64.0)

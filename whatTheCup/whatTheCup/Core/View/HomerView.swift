@@ -26,10 +26,10 @@ struct HomerView: View {
                     } label: {
                         if GameTopVM.soundState {
                             Image(systemName: "speaker.wave.3.fill")
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                         } else {
                             Image(systemName: "speaker.slash.fill")
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                         }
                     }
                 }
@@ -38,28 +38,31 @@ struct HomerView: View {
                     VStack {
                         CharacterData().homer.image
                     }
-                    VStack {
+                    .padding(.bottom, 150.0)    //posicao homer
+                    VStack(alignment: .leading, spacing: -10){
                         Spacer()
                         HStack {
                             ZStack {
                                 Rectangle()
-                                    .frame(width: 72, height: 32)
+                                    .frame(width: 120, height: 35)
                                 Text(CharacterData().homer.costume)
+                                    .padding()
                                     .foregroundStyle(.yellow)
                             }
                             Spacer()
                         }
-                        ZStack {
+                            ZStack {
                             Rectangle()
-                                .frame(width: 360, height: 56)
+                                .frame(width: 350, height: 100)
                             Text("They keep complimenting my bald head thinking its part of the costume… I'm just calvo.")
-                                .foregroundStyle(.yellow)
+                                .foregroundStyle(.green)
                         }
                     }
-                    .padding(.horizontal, 16.0)
+                    .padding(.vertical, 40.0)
                 }
+                .padding(30.0)
             }
-            .padding(.vertical, 64.0)
+            .padding(.vertical, 30.0)
         }
     }
 }
@@ -67,3 +70,14 @@ struct HomerView: View {
 #Preview {
     HomerView()
 }
+
+//ZStack {
+//    Image.icon.dialogueBox
+//        .resizable()
+//        .frame(width: 357, height: 222)
+//        ZStack {
+//                Text(GameTopVM.onboardingDialogue[dialogueCounter])
+//                .frame(width: 300, height: 300)
+//                .font(.system(size: 20))
+//                .lineLimit(5)
+//                .foregroundStyle(.green)

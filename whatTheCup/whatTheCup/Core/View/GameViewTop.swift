@@ -18,7 +18,6 @@ struct GameViewTop: View {
         ZStack {
             Image("bgDanceFloor")
                 .ignoresSafeArea()
-            
             NavigationLink(destination: HomerView(), isActive: $GameTopVM.homerView) {EmptyView()}
             NavigationLink(destination: VampireWolfView(), isActive: $GameTopVM.vampireMageView) {EmptyView()}
             NavigationLink(destination: EverybodyView(), isActive: $GameTopVM.everybodyView) {EmptyView()}

@@ -47,6 +47,16 @@ struct BartenderView: View {
                                 Text(GameTopVM.cup1)
                                     .foregroundStyle(.black)
                             }
+                        }
+                        VStack(alignment: .leading, spacing: -10) {
+                            HStack {
+                                ZStack {
+                                    Rectangle()
+                                        .frame(width: 100, height: 32)
+                                    Text("Bartender")
+                                        .foregroundStyle(.purple)
+                                }
+                                Spacer()
                             VStack {
                                 GameTopVM.drinks[1].imagem
                                     .resizable()
@@ -81,7 +91,10 @@ struct BartenderView: View {
                         HStack {
                             ZStack {
                                 Rectangle()
-                                    .frame(width: 80, height: 32)
+                                    .frame(width: 360, height: 160)
+                                Text("Select the cup to define who you think it belongs to. For each cup you guess right, you get a point. Only drink a cup if you're sure it's yours.")
+                                    .foregroundStyle(.green)
+                                    .frame(width: 330, height: 150)
                                 Text("Bartender")
                                     .foregroundStyle(.yellow)
                             }
