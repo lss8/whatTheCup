@@ -20,8 +20,8 @@ struct CupView: View {
             Image.icon.DrinkBG
                 .ignoresSafeArea()
             
-            NavigationLink(destination: GameOverView(gameWon: false, score: GameTopVM.score), isActive: $GameTopVM.gameLost) {EmptyView()}.navigationBarBackButtonHidden(true)
-            NavigationLink(destination: GameOverView(gameWon: true, score: GameTopVM.score), isActive: $GameTopVM.gameWon) {EmptyView()}.navigationBarBackButtonHidden(true)
+            NavigationLink(destination: GameOverView(gameWon: false, score: GameTopVM.score), isActive: $GameTopVM.gameLost) {EmptyView()}
+            NavigationLink(destination: GameOverView(gameWon: true, score: GameTopVM.score), isActive: $GameTopVM.gameWon) {EmptyView()}
             
             VStack(spacing: 36.0) {
                 HStack {
@@ -43,16 +43,28 @@ struct CupView: View {
                         Button {
                             GameTopVM.guessCup(num: cupCounter, name: CharacterData().homer.costume)
                         } label: {
-                            CharacterData().homer.head
-                                .resizable()
-                                .frame(width: 100, height: 100)
+                            if !GameTopVM.rightH {
+                                CharacterData().homer.head
+                                    .resizable()
+                                    .frame(width: 100, height: 100)
+                            } else {
+                                Image("homerHeadGreen")
+                                    .resizable()
+                                    .frame(width: 100, height: 100)
+                            }
                         }
                         Button {
                             GameTopVM.guessCup(num: cupCounter, name: CharacterData().vampire.costume)
                         } label: {
-                            CharacterData().vampire.head
-                                .resizable()
-                                .frame(width: 100, height: 100)
+                            if !GameTopVM.rightV {
+                                CharacterData().vampire.head
+                                    .resizable()
+                                    .frame(width: 100, height: 100)
+                            } else {
+                                Image("vampireHeadGreen")
+                                    .resizable()
+                                    .frame(width: 100, height: 100)
+                            }
                         }
                     }
                     HStack(spacing: 32.0) {
@@ -66,9 +78,15 @@ struct CupView: View {
                         Button {
                             GameTopVM.guessCup(num: cupCounter, name: CharacterData().goblin.costume)
                         } label: {
-                            CharacterData().goblin.head
-                                .resizable()
-                                .frame(width: 100, height: 100)
+                            if !GameTopVM.rightG {
+                                CharacterData().goblin.head
+                                    .resizable()
+                                    .frame(width: 100, height: 100)
+                            } else {
+                                Image("goblinHeadGreen")
+                                    .resizable()
+                                    .frame(width: 100, height: 100)
+                            }
                         }
                         Button {
                             GameTopVM.guessCup(num: cupCounter, name: CharacterData().alien.costume) 

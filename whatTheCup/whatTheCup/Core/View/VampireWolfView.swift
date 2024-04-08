@@ -87,7 +87,7 @@ struct VampireWolfView: View {
                     .padding(.trailing, 50.0)
                 }
             }
-            .padding(.vertical, 32.0)
+            .padding(.vertical, 56.0)
         }
     }
 }

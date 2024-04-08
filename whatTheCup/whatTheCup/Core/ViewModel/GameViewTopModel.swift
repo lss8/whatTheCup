@@ -27,6 +27,10 @@ class GameViewTopModel: ObservableObject {
     @Published var gameWon = false
     @Published var gameLost = false
     
+    @Published var rightH = false
+    @Published var rightV = false
+    @Published var rightG = false
+    
     @Published var score = 0
     
     @Published var drinks: [(nome: String, imagem: Image, bebado: String)] = [
@@ -59,6 +63,13 @@ class GameViewTopModel: ObservableObject {
         if num != 3 {
             if drinks[num].bebado == name {
                 score += 1
+                if num == 0 {
+                    rightV = true
+                } else if num == 1 {
+                    rightH = true
+                } else {
+                    rightG = true
+                }
             } else {
                 gameLost = true
             }

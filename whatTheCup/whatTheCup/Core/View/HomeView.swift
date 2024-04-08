@@ -56,7 +56,7 @@ struct HomeView: View {
             playSoundtrack(sound: "openMusic")
         }
         .onDisappear{
-            stopSoundtrack(sound: "openMusic")
+            //stopSoundtrack(sound: "openMusic")
             if !GameTopVM.soundState {
                 GameTopVM.soundState.toggle()
             }

@@ -76,7 +76,7 @@ struct GameOverView: View {
             .onAppear{
                 playSoundtrack(sound: gameWon ? "gameWin" : "gameOver")
             }
-        }
+        }.navigationBarBackButtonHidden(true)
     }
 }
 
