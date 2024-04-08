@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		174878042BC3072600B65383 /* clubSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 174878032BC3072600B65383 /* clubSound.mp3 */; };
 		17DCDD212BC1D8DB0043B12A /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DCDD202BC1D8DB0043B12A /* GameOverView.swift */; };
+		17DCDD232BC1F9A50043B12A /* openMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17DCDD222BC1F9A50043B12A /* openMusic.mp3 */; };
+		17DCDD262BC1FC6E0043B12A /* sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DCDD252BC1FC6E0043B12A /* sound.swift */; };
+		17DCDD2C2BC21EB20043B12A /* gameOver.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17DCDD2B2BC21EB20043B12A /* gameOver.mp3 */; };
+		6707A1042BC2C9BF00DEF00C /* gameWin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6707A1032BC2C9BF00DEF00C /* gameWin.mp3 */; };
+		6707A1062BC2E79300DEF00C /* Sipping - Sound Effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6707A1052BC2E79300DEF00C /* Sipping - Sound Effect.mp3 */; };
 		67E086072BC1C282003A4711 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E086062BC1C282003A4711 /* OnboardingView.swift */; };
+		CF4F21092BC22AEB00A1BCE8 /* BartenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4F21082BC22AEB00A1BCE8 /* BartenderView.swift */; };
+		CF4F210B2BC233DF00A1BCE8 /* CupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4F210A2BC233DF00A1BCE8 /* CupView.swift */; };
+		CF4F210E2BC2353900A1BCE8 /* DropDownPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4F210D2BC2353900A1BCE8 /* DropDownPicker.swift */; };
 		CF8C24A92BC192BB004541B6 /* whatTheCupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24A82BC192BB004541B6 /* whatTheCupApp.swift */; };
 		CF8C24AD2BC192BD004541B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8C24AC2BC192BD004541B6 /* Assets.xcassets */; };
 		CF8C24B02BC192BD004541B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8C24AF2BC192BD004541B6 /* Preview Assets.xcassets */; };
@@ -18,11 +27,25 @@
 		CF8C24C52BC1D633004541B6 /* GameViewTopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24C42BC1D633004541B6 /* GameViewTopModel.swift */; };
 		CF8C24C72BC1DDFA004541B6 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24C62BC1DDFA004541B6 /* Character.swift */; };
 		CF8C24CA2BC1DEA6004541B6 /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24C92BC1DEA6004541B6 /* CharacterData.swift */; };
+		CF8C24D62BC1FEC6004541B6 /* HomerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24D52BC1FEC6004541B6 /* HomerView.swift */; };
+		CF8C24DC2BC1FEE7004541B6 /* VampireWolfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24DB2BC1FEE7004541B6 /* VampireWolfView.swift */; };
+		CF8C24DE2BC1FF0D004541B6 /* EverybodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C24DD2BC1FF0D004541B6 /* EverybodyView.swift */; };
+		CFB4A79C2BC31A14001F3BC7 /* MyCustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB4A79B2BC31A14001F3BC7 /* MyCustomFonts.swift */; };
+		CFB4A79E2BC31A34001F3BC7 /* Pixellari.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFB4A79D2BC31A34001F3BC7 /* Pixellari.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		174878032BC3072600B65383 /* clubSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clubSound.mp3; sourceTree = "<group>"; };
 		17DCDD202BC1D8DB0043B12A /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		17DCDD222BC1F9A50043B12A /* openMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = openMusic.mp3; sourceTree = "<group>"; };
+		17DCDD252BC1FC6E0043B12A /* sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sound.swift; sourceTree = "<group>"; };
+		17DCDD2B2BC21EB20043B12A /* gameOver.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameOver.mp3; sourceTree = "<group>"; };
+		6707A1032BC2C9BF00DEF00C /* gameWin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameWin.mp3; sourceTree = "<group>"; };
+		6707A1052BC2E79300DEF00C /* Sipping - Sound Effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sipping - Sound Effect.mp3"; sourceTree = "<group>"; };
 		67E086062BC1C282003A4711 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		CF4F21082BC22AEB00A1BCE8 /* BartenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BartenderView.swift; sourceTree = "<group>"; };
+		CF4F210A2BC233DF00A1BCE8 /* CupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupView.swift; sourceTree = "<group>"; };
+		CF4F210D2BC2353900A1BCE8 /* DropDownPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownPicker.swift; sourceTree = "<group>"; };
 		CF8C24A52BC192BB004541B6 /* whatTheCup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatTheCup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8C24A82BC192BB004541B6 /* whatTheCupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatTheCupApp.swift; sourceTree = "<group>"; };
 		CF8C24AC2BC192BD004541B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,6 +56,11 @@
 		CF8C24C42BC1D633004541B6 /* GameViewTopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewTopModel.swift; sourceTree = "<group>"; };
 		CF8C24C62BC1DDFA004541B6 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		CF8C24C92BC1DEA6004541B6 /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
+		CF8C24D52BC1FEC6004541B6 /* HomerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomerView.swift; sourceTree = "<group>"; };
+		CF8C24DB2BC1FEE7004541B6 /* VampireWolfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VampireWolfView.swift; sourceTree = "<group>"; };
+		CF8C24DD2BC1FF0D004541B6 /* EverybodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverybodyView.swift; sourceTree = "<group>"; };
+		CFB4A79B2BC31A14001F3BC7 /* MyCustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomFonts.swift; sourceTree = "<group>"; };
+		CFB4A79D2BC31A34001F3BC7 /* Pixellari.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pixellari.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +74,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17DCDD242BC1FC350043B12A /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				174878032BC3072600B65383 /* clubSound.mp3 */,
+				6707A1032BC2C9BF00DEF00C /* gameWin.mp3 */,
+				17DCDD222BC1F9A50043B12A /* openMusic.mp3 */,
+				17DCDD2B2BC21EB20043B12A /* gameOver.mp3 */,
+				6707A1052BC2E79300DEF00C /* Sipping - Sound Effect.mp3 */,
+				17DCDD252BC1FC6E0043B12A /* sound.swift */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		CF4F210C2BC2352600A1BCE8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CF4F210D2BC2353900A1BCE8 /* DropDownPicker.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		CF8C249C2BC192BB004541B6 = {
 			isa = PBXGroup;
 			children = (
@@ -114,9 +163,15 @@
 			isa = PBXGroup;
 			children = (
 				CF8C24BC2BC1B044004541B6 /* HomeView.swift */,
-				CF8C24C02BC1B67D004541B6 /* GameViewTop.swift */,
-				17DCDD202BC1D8DB0043B12A /* GameOverView.swift */,
 				67E086062BC1C282003A4711 /* OnboardingView.swift */,
+				CF8C24C02BC1B67D004541B6 /* GameViewTop.swift */,
+				CF8C24D52BC1FEC6004541B6 /* HomerView.swift */,
+				CF8C24DB2BC1FEE7004541B6 /* VampireWolfView.swift */,
+				CF8C24DD2BC1FF0D004541B6 /* EverybodyView.swift */,
+				CF4F21082BC22AEB00A1BCE8 /* BartenderView.swift */,
+				CF4F210A2BC233DF00A1BCE8 /* CupView.swift */,
+				17DCDD202BC1D8DB0043B12A /* GameOverView.swift */,
+				CF4F210C2BC2352600A1BCE8 /* Components */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -125,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				CF8C24BE2BC1B0F5004541B6 /* Image.swift */,
+				CFB4A79B2BC31A14001F3BC7 /* MyCustomFonts.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -132,6 +188,8 @@
 		CF8C24BB2BC19AF2004541B6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				17DCDD242BC1FC350043B12A /* Sound */,
+				CFB4A79D2BC31A34001F3BC7 /* Pixellari.ttf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -202,8 +260,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6707A1042BC2C9BF00DEF00C /* gameWin.mp3 in Resources */,
+				17DCDD2C2BC21EB20043B12A /* gameOver.mp3 in Resources */,
 				CF8C24B02BC192BD004541B6 /* Preview Assets.xcassets in Resources */,
+				CFB4A79E2BC31A34001F3BC7 /* Pixellari.ttf in Resources */,
 				CF8C24AD2BC192BD004541B6 /* Assets.xcassets in Resources */,
+				174878042BC3072600B65383 /* clubSound.mp3 in Resources */,
+				17DCDD232BC1F9A50043B12A /* openMusic.mp3 in Resources */,
+				6707A1062BC2E79300DEF00C /* Sipping - Sound Effect.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,13 +278,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF4F21092BC22AEB00A1BCE8 /* BartenderView.swift in Sources */,
+				CF4F210E2BC2353900A1BCE8 /* DropDownPicker.swift in Sources */,
 				CF8C24CA2BC1DEA6004541B6 /* CharacterData.swift in Sources */,
 				CF8C24C52BC1D633004541B6 /* GameViewTopModel.swift in Sources */,
+				CF8C24D62BC1FEC6004541B6 /* HomerView.swift in Sources */,
+				CFB4A79C2BC31A14001F3BC7 /* MyCustomFonts.swift in Sources */,
+				CF8C24DC2BC1FEE7004541B6 /* VampireWolfView.swift in Sources */,
 				17DCDD212BC1D8DB0043B12A /* GameOverView.swift in Sources */,
 				CF8C24C12BC1B67D004541B6 /* GameViewTop.swift in Sources */,
 				CF8C24BD2BC1B044004541B6 /* HomeView.swift in Sources */,
+				CF8C24DE2BC1FF0D004541B6 /* EverybodyView.swift in Sources */,
+				17DCDD262BC1FC6E0043B12A /* sound.swift in Sources */,
 				CF8C24C72BC1DDFA004541B6 /* Character.swift in Sources */,
 				CF8C24BF2BC1B0F5004541B6 /* Image.swift in Sources */,
+				CF4F210B2BC233DF00A1BCE8 /* CupView.swift in Sources */,
 				67E086072BC1C282003A4711 /* OnboardingView.swift in Sources */,
 				CF8C24A92BC192BB004541B6 /* whatTheCupApp.swift in Sources */,
 			);
@@ -364,6 +436,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -393,6 +466,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

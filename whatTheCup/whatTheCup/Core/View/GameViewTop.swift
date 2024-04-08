@@ -16,7 +16,14 @@ struct GameViewTop: View {
     
     var body: some View {
         ZStack {
+            Image("bgDanceFloor")
+                .ignoresSafeArea()
+            NavigationLink(destination: HomerView(), isActive: $GameTopVM.homerView) {EmptyView()}
+            NavigationLink(destination: VampireWolfView(), isActive: $GameTopVM.vampireMageView) {EmptyView()}
+            NavigationLink(destination: EverybodyView(), isActive: $GameTopVM.everybodyView) {EmptyView()}
+            
             VStack {
+                Spacer()
                 HStack {
                     Spacer()
                     Button {
@@ -24,83 +31,72 @@ struct GameViewTop: View {
                     } label: {
                         if GameTopVM.soundState {
                             Image(systemName: "speaker.wave.3.fill")
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                         } else {
                             Image(systemName: "speaker.slash.fill")
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                         }
                     }
                 }
-                Image.icon.logo // IMAGEM DO BARTENDER
-                    .resizable()
-                    .frame(width: 150, height: 150)
-                ZStack {
-                    Rectangle()
-                        .frame(width: UIScreen.main.bounds.width, height: 100)
-                        .foregroundColor(.gray)
-                    HStack(spacing: 32.0) {
-                        Circle()
-                        .frame(width: 40, height: 40)
-                        Circle()
-                        .frame(width: 40, height: 40)
-                        Circle()
-                        .frame(width: 40, height: 40)
-                        Circle()
-                        .frame(width: 40, height: 40)
-                    }
+                NavigationLink(destination: BartenderView()) {
+                    Image("Bartender")
+                        .resizable()
+                        .frame(width: 150, height: 150)
                 }
                 ZStack {
-                    Rectangle()
-                        .ignoresSafeArea()
-                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                     VStack {
                         HStack {
-                            CharacterData().homer.image
-                                .resizable()
-                                .frame(width: 100, height: 100)
-                            Spacer()
+                            Button {
+                                GameTopVM.charClicked(name: CharacterData().vampire.costume)
+                            } label: {
+                                CharacterData().vampire.head
+                                    .resizable()
+                                    .frame(width: 100, height: 100)
+                            }
                             VStack {
                                 Spacer()
-                                CharacterData().tinker.image
-                                    .resizable()
-                                .frame(width: 100, height: 100)
+                                Button {
+                                    GameTopVM.charClicked(name: CharacterData().werewolf.costume)
+                                } label: {
+                                    CharacterData().werewolf.head
+                                        .resizable()
+                                        .frame(width: 100, height: 100)
+                                }
                             }
-                            CharacterData().mage.image
-                                .resizable()
-                                .frame(width: 100, height: 100)
+                            Button {
+                                GameTopVM.charClicked(name: CharacterData().homer.costume)
+                            } label: {
+                                CharacterData().homer.head
+                                    .resizable()
+                                    .frame(width: 100, height: 100)
+                            }
                         }
                         HStack {
-                            CharacterData().vampire.image
-                                .resizable()
-                                .frame(width: 100, height: 100)
+                            Button {
+                                GameTopVM.charClicked(name: CharacterData().alien.costume)
+                            } label: {
+                                CharacterData().alien.head
+                                    .resizable()
+                                    .frame(width: 100, height: 100)
+                            }
                             VStack {
                                 Spacer()
-                                CharacterData().werewolf.image
-                                    .resizable()
-                                .frame(width: 100, height: 100)
+                                Button {
+                                    GameTopVM.charClicked(name: CharacterData().goblin.costume)
+                                } label: {
+                                    CharacterData().goblin.head
+                                        .resizable()
+                                        .frame(width: 100, height: 100)
+                                }
                             }
-                            Spacer()
-                            CharacterData().thor.image
-                                .resizable()
-                                .frame(width: 100, height: 100)
-                        }
-                        HStack {
-                            CharacterData().alien.image
-                                .resizable()
-                                .frame(width: 100, height: 100)
-                            VStack {
-                                Spacer()
-                                CharacterData().goblin.image
-                                    .resizable()
-                                .frame(width: 100, height: 100)
-                            }
-                            CharacterData().zombie.image
-                                .resizable()
-                                .frame(width: 100, height: 100)
                         }
                     }
+                    .padding(.top, 64.0)
                 }
             }
+            .padding(.top, 16)
+            .padding(.bottom, 64)
+            .padding(.trailing, 32)
         }
     }
 }

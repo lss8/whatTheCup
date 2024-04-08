@@ -9,57 +9,38 @@ import Foundation
 import SwiftUI
 
 struct CharacterData {
-    let mage: Character = Character(
-        id: 0,
-        costume: "Mage",
-        drink: "",
-        image: Image.icon.startButton)
-    
-    let tinker: Character = Character(
-        id: 1,
-        costume: "Tinker",
-        drink: "Bloody Mary",
-        image: Image.icon.logo)
-    
     let homer: Character = Character(
-        id: 2,
+        id: 0,
         costume: "Homer",
         drink: "Beer",
-        image: Image.icon.logo)
-    
-    let thor: Character = Character(
-        id: 3,
-        costume: "Thor",
-        drink: "",
-        image: Image.icon.logo)
+        image: Image.chars.homer,
+        head: Image.chars.homerHead)
     
     let vampire: Character = Character(
-        id: 4,
+        id: 1,
         costume: "Vampire",
-        drink: "",
-        image: Image.icon.logo)
+        drink: "Bloody Mary",
+        image: Image.chars.vampire,
+        head: Image.chars.vampireHead)
     
     let werewolf: Character = Character(
-        id: 5,
+        id: 2,
         costume: "Werewolf",
         drink: "",
-        image: Image.icon.logo)
-    
-    let zombie: Character = Character(
-        id: 6,
-        costume: "Zombie",
-        drink: "",
-        image: Image.icon.logo)
+        image: Image.chars.werewolf,
+        head: Image.chars.werewolfHead)
     
     let goblin: Character = Character(
-        id: 7,
+        id: 3,
         costume: "Goblin",
         drink: "Coke",
-        image: Image.icon.logo)
+        image: Image.chars.goblin,
+        head: Image.chars.goblinHead)
     
     let alien: Character = Character(
-        id: 8,
+        id: 4,
         costume: "Alien",
         drink: "",
-        image: Image.icon.logo)
+        image: Image.chars.alien,
+        head: Image.chars.alienHead)
 }

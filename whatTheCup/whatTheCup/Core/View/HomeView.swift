@@ -16,38 +16,55 @@ struct HomeView: View {
     
     var body: some View {
         ZStack {
-            Color(.lightGray)
+            Image.icon.startBg
                 .ignoresSafeArea()
-            VStack(spacing: 64.0) {
+            VStack(spacing: 0) {
                 HStack {
                     Spacer()
                     Button {
                         GameTopVM.soundState.toggle()
+                        if GameTopVM.soundState {
+                            playSoundtrack(sound: "openMusic")
+                        } else {
+                            stopSoundtrack(sound: "openMusic")
+                        }
                     } label: {
                         if GameTopVM.soundState {
                             Image(systemName: "speaker.wave.3.fill")
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                         } else {
                             Image(systemName: "speaker.slash.fill")
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                         }
-                    }
+                    }.padding(.trailing, 20)
+                        .padding(.top, 40)
+                        .padding(.bottom, 80)
                 }
-                Spacer()
-                VStack(spacing: 32.0) {
-                    Image.icon.logo
-                    NavigationLink(destination: GameViewTop()) {
-                        Image.icon.startButton
+                VStack(spacing: 0) {
+                    Image.icon.whatDCup
+                    NavigationLink(destination: OnboardingView()) {
+                        Image.icon.startButton1
                     }
+                    
                 }
                 Spacer()
                 Spacer()
             }
             .padding(32.0)
         }
+        .onAppear{
+            playSoundtrack(sound: "openMusic")
+        }
+        .onDisappear{
+            //stopSoundtrack(sound: "openMusic")
+            if !GameTopVM.soundState {
+                GameTopVM.soundState.toggle()
+            }
+            
+        }
     }
 }
 
-#Preview {
-    HomeView()
-}
+//#Preview {
+//    HomeView()
+//}
