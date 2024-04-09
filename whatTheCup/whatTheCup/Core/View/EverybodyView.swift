@@ -56,12 +56,13 @@ struct EverybodyView: View {
                                 ZStack {
                                     Rectangle()
                                         .frame(width: 300, height: 56)
-                                    Text("I think I'm going to throw up… ")
+                                    Text("This party is ok, I guess. The music is too loud, though.")
                                         .font(.custom(.pixellari, size: 20.0))
+                                        .frame(width: 290)
                                         .foregroundStyle(.green)
                                 }
                             }
-                            
+            
                             VStack(alignment: .leading, spacing: 0) {
                                 HStack {
                                     ZStack {
@@ -74,9 +75,10 @@ struct EverybodyView: View {
                                 }
                                 ZStack {
                                     Rectangle()
-                                        .frame(width: 300, height: 56)
-                                    Text("Let's go take some more shots!!")
+                                        .frame(width: 300, height: 90)
+                                    Text("Relax, man! You should be more like that Simpson dude. He's super into this party - his costume is sick!")
                                         .font(.custom(.pixellari, size: 20.0))
+                                        .frame(width: 290)
                                         .foregroundStyle(.green)
                                 }
                             }
